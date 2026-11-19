@@ -1,0 +1,4454 @@
+<!doctype html>
+<html lang="en" data-style-mode="cyber" data-motion-mode="ultra">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060410">
+  <title>HEXLO — Multi-Platform PC, Laptop &amp; Mobile Gaming Universe &amp; Best Deals</title>
+  <meta name="description" content="HEXLO is your multi-platform gaming universe for PC, Laptop, and Mobile. Sign in to explore 28 top games, compare lowest market deals, and launch official stores.">
+  <meta name="keywords" content="Hexlo, Hexlo gaming, PC games deals, laptop games, mobile games, free to play games, best game prices, Google Chrome Edge search">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hexlo.gg/">
+
+  <!-- Open Graph & Social Search Cards for Hexlo -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hexlo">
+  <meta property="og:title" content="HEXLO — Multi-Platform PC, Laptop &amp; Mobile Gaming Universe">
+  <meta property="og:description" content="Enter HEXLO: Sign in or create your gamer profile to explore 28 top games, compare lowest market prices on PC, Laptop &amp; Mobile, and launch official stores.">
+  <meta property="og:url" content="https://hexlo.gg/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HEXLO — Multi-Platform Gaming Universe">
+  <meta name="twitter:description" content="Explore 28 PC, Laptop &amp; Mobile games, find lowest-price deals, and sync your Hexlo gamer profile.">
+
+  <!-- Inline SVG Favicon for Browser Tabs & Search Results -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23e879f9'/%3E%3Cstop offset='50%25' stop-color='%237e22ce'/%3E%3Cstop offset='100%25' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='32,3 58,18 58,46 32,61 6,46 6,18' fill='url(%23g)'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='26' fill='%23ffffff'%3EH%3C/text%3E%3C/svg%3E">
+
+  <!-- Schema.org Structured Data for Google, Chrome & Microsoft Edge Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Hexlo",
+    "alternateName": ["HEXLO Gaming Universe", "Hexlo Games"],
+    "url": "https://hexlo.gg/",
+    "description": "Multi-platform PC, Laptop, and Mobile gaming hub featuring 28 top games, lowest-price market deal guides, and official store launchers.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hexlo.gg/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Orbitron:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* =====================================================================
+       DESIGN TOKENS, TYPOGRAPHY MODES & MOTION INTENSITY SYSTEM
+       ===================================================================== */
+    :root {
+      --bg: #05040d;
+      --panel: #0e0a1e;
+      --panel2: #171130;
+      --line: rgba(147, 51, 234, 0.34);
+      --purple: #a855f7;
+      --pink: #f43f5e;
+      --magenta: #e879f9;
+      --cyan: #38bdf8;
+      --neon-cyan: #67e8f9;
+      --text: #f8f6ff;
+      --muted: #b0a6ce;
+      --green: #4ade80;
+
+      --font-display: 'Orbitron', 'Rajdhani', system-ui, sans-serif;
+      --font-hud: 'Rajdhani', 'Orbitron', system-ui, sans-serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+      --ease-spring: cubic-bezier(0.22, 1.28, 0.36, 1);
+      --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+      --motion-scale: 1;
+      --glow-strength: 1;
+    }
+
+    html[data-style-mode="clean"] {
+      --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-hud: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    html[data-motion-mode="balanced"] {
+      --motion-scale: 0.6;
+      --glow-strength: 0.7;
+    }
+
+    html[data-motion-mode="reduced"],
+    html[data-motion-mode="reduced"] * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.06s !important;
+      scroll-behavior: auto !important;
+    }
+
+    html[data-motion-mode="reduced"] {
+      --motion-scale: 0;
+      --glow-strength: 0.35;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font: 500 15px/1.55 var(--font-body);
+      background:
+        radial-gradient(ellipse 75% 48% at 50% -10%, rgba(168, 85, 247, 0.28), transparent 62%),
+        radial-gradient(ellipse 55% 45% at 96% 30%, rgba(56, 189, 248, 0.16), transparent 56%),
+        radial-gradient(ellipse 50% 42% at 5% 82%, rgba(232, 121, 249, 0.13), transparent 56%),
+        var(--bg);
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-variant-numeric: tabular-nums;
+    }
+
+    button, input, select, textarea { font: inherit; }
+    a { color: inherit; }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #070512; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #9333ea, #0284c7);
+      border-radius: 99px;
+    }
+
+    /* =====================================================================
+       BACKGROUND STARFIELD CANVAS & PERSPECTIVE CYBER-GRID FLOOR
+       ===================================================================== */
+    #universeCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -3;
+      pointer-events: none;
+      opacity: 0.85;
+    }
+
+    .cyber-floor {
+      position: fixed;
+      left: -20%;
+      right: -20%;
+      bottom: -18%;
+      height: 55vh;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.28;
+      background-image:
+        linear-gradient(to right, rgba(168, 85, 247, 0.35) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.35) 1px, transparent 1px);
+      background-size: 56px 56px;
+      transform: perspective(480px) rotateX(68deg);
+      transform-origin: center bottom;
+      mask-image: linear-gradient(to top, rgba(0,0,0,0.95), transparent 85%);
+      animation: floorGlide 8s linear infinite;
+    }
+
+    @keyframes floorGlide {
+      from { background-position: 0 0; }
+      to { background-position: 0 56px; }
+    }
+
+    .pointer-glow {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(168, 85, 247, 0.16), rgba(56, 189, 248, 0.06) 45%, transparent 72%);
+      mix-blend-mode: screen;
+      transition: opacity 0.25s ease;
+    }
+
+    @media (pointer: fine) {
+      .pointer-glow { opacity: calc(0.95 * var(--glow-strength)); }
+    }
+
+    /* =====================================================================
+       ENTRANCE CURTAIN (NEVER BLOCKS CLICKS ONCE DISMISSED)
+       ===================================================================== */
+    #entryCurtain {
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      display: grid;
+      place-items: center;
+      pointer-events: auto;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 44%, rgba(168, 85, 247, 0.32), transparent 52%),
+        radial-gradient(circle at 76% 26%, rgba(56, 189, 248, 0.24), transparent 48%),
+        linear-gradient(155deg, #04030b 0%, #0b071e 55%, #050918 100%);
+      transition: opacity 0.45s var(--ease-smooth), transform 0.55s var(--ease-smooth);
+    }
+
+    #entryCurtain.is-exiting {
+      opacity: 0;
+      transform: scale(1.05);
+      pointer-events: none !important;
+    }
+
+    #entryCurtain.is-hidden {
+      display: none !important;
+      pointer-events: none !important;
+    }
+
+    .curtain-scan {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        180deg,
+        transparent 0px,
+        transparent 3px,
+        rgba(103, 232, 249, 0.045) 4px,
+        rgba(168, 85, 247, 0.035) 5px
+      );
+    }
+
+    .curtain-beam {
+      position: absolute;
+      left: -20%;
+      right: -20%;
+      height: 2px;
+      top: 50%;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent, #e879f9 25%, #67e8f9 50%, #a855f7 75%, transparent);
+      box-shadow: 0 0 28px rgba(103, 232, 249, 0.85), 0 0 56px rgba(232, 121, 249, 0.65);
+      animation: beamSweep 1.1s var(--ease-spring) forwards;
+    }
+
+    @keyframes beamSweep {
+      0% { transform: scaleX(0.05); opacity: 0.2; }
+      65% { transform: scaleX(1.04); opacity: 1; }
+      100% { transform: scaleX(1); opacity: 0.5; }
+    }
+
+    .curtain-box {
+      position: relative;
+      z-index: 2;
+      width: min(540px, 92vw);
+      padding: clamp(26px, 5vw, 42px) clamp(20px, 4vw, 34px);
+      text-align: center;
+      border-radius: 26px;
+      background: rgba(11, 8, 25, 0.84);
+      border: 1px solid rgba(168, 85, 247, 0.52);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 24px 85px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(56, 189, 248, 0.12);
+    }
+
+    .hud-corner {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      border-color: #67e8f9;
+      border-style: solid;
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.65s var(--ease-spring), opacity 0.4s ease;
+    }
+    .hud-corner.tl { top: 12px; left: 12px; border-width: 2.5px 0 0 2.5px; border-top-left-radius: 8px; transform: translate(-14px, -14px); }
+    .hud-corner.tr { top: 12px; right: 12px; border-width: 2.5px 2.5px 0 0; border-top-right-radius: 8px; transform: translate(14px, -14px); }
+    .hud-corner.bl { bottom: 12px; left: 12px; border-width: 0 0 2.5px 2.5px; border-bottom-left-radius: 8px; transform: translate(-14px, 14px); }
+    .hud-corner.br { bottom: 12px; right: 12px; border-width: 0 2.5px 2.5px 0; border-bottom-right-radius: 8px; transform: translate(14px, 14px); }
+    #entryCurtain.is-armed .hud-corner { opacity: 1; transform: translate(0, 0); }
+
+    .curtain-hex-badge {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 12px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #e879f9, #7e22ce 55%, #0284c7);
+      box-shadow: 0 0 32px rgba(168, 85, 247, 0.75);
+    }
+
+    .curtain-title {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 46px);
+      font-weight: 900;
+      margin: 0;
+      letter-spacing: 1.5px;
+    }
+
+    .curtain-title span {
+      background: linear-gradient(95deg, #f0abfc, #a855f7 48%, #67e8f9 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .curtain-sub {
+      margin: 10px auto 18px;
+      max-width: 400px;
+      font-size: 13px;
+      color: #cfc6e8;
+    }
+
+    .curtain-bar {
+      width: min(320px, 100%);
+      height: 5px;
+      margin: 0 auto 16px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .curtain-bar i {
+      display: block;
+      height: 100%;
+      width: 0%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #e879f9, #a855f7 50%, #38bdf8);
+      box-shadow: 0 0 16px rgba(103, 232, 249, 0.8);
+      transition: width 1.1s var(--ease-smooth);
+    }
+
+    #entryCurtain.is-armed .curtain-bar i { width: 100%; }
+
+    .curtain-enter-btn {
+      position: relative;
+      z-index: 5;
+      border: 1px solid rgba(192, 132, 252, 0.65);
+      background: linear-gradient(105deg, rgba(147, 51, 234, 0.65), rgba(2, 132, 199, 0.65));
+      color: #fff;
+      border-radius: 999px;
+      padding: 9px 20px;
+      font-family: var(--font-hud);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.2s var(--ease-spring), border-color 0.2s ease;
+    }
+
+    .curtain-enter-btn:hover {
+      transform: translateY(-2px);
+      border-color: #67e8f9;
+    }
+
+    /* =====================================================================
+       STICKY TOP HEADER
+       ===================================================================== */
+    .topbar {
+      min-height: 76px;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px clamp(14px, 2.5vw, 32px);
+      background: rgba(7, 5, 17, 0.9);
+      border-bottom: 1px solid rgba(147, 51, 234, 0.32);
+      backdrop-filter: blur(20px) saturate(145%);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.65);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brandmark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #e879f9, #7e22ce 55%, #0284c7);
+      box-shadow: 0 0 calc(26px * var(--glow-strength)) rgba(168, 85, 247, 0.65);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .brandname {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      line-height: 1.05;
+    }
+
+    .brandname span {
+      background: linear-gradient(90deg, #e879f9, #67e8f9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .tagline {
+      font-family: var(--font-hud);
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #c4b5fd;
+      letter-spacing: 2px;
+      margin-top: 2px;
+      text-transform: uppercase;
+    }
+
+    .searchwrap {
+      flex: 1;
+      position: relative;
+      max-width: 460px;
+      min-width: 170px;
+    }
+
+    .searchwrap:before {
+      content: '⌕';
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-54%);
+      color: #b794f4;
+      font-size: 21px;
+      pointer-events: none;
+    }
+
+    .search {
+      width: 100%;
+      border: 1px solid rgba(124, 58, 237, 0.45);
+      border-radius: 999px;
+      background: rgba(19, 14, 37, 0.94);
+      padding: 9px 16px 9px 42px;
+      color: #fff;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .search:focus {
+      border-color: #c084fc;
+      box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.24);
+    }
+
+    .top-controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .pill-btn {
+      border: 1px solid rgba(139, 92, 246, 0.42);
+      background: rgba(18, 13, 35, 0.92);
+      color: #e2d9fa;
+      border-radius: 10px;
+      padding: 7px 10px;
+      font-family: var(--font-hud);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: transform 0.18s var(--ease-spring), border-color 0.2s ease, background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .pill-btn:hover {
+      border-color: #67e8f9;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .pill-btn.active-mode {
+      border-color: #e879f9;
+      background: linear-gradient(110deg, rgba(126, 34, 206, 0.48), rgba(8, 145, 178, 0.38));
+      color: #fff;
+    }
+
+    .pill-btn.seo-btn {
+      border-color: rgba(56, 189, 248, 0.58);
+      background: linear-gradient(110deg, rgba(14, 116, 144, 0.42), rgba(88, 28, 135, 0.42));
+      color: #a5f3fc;
+    }
+
+    /* =====================================================================
+       LAYOUT & SIDEBAR
+       ===================================================================== */
+    .layout {
+      display: grid;
+      grid-template-columns: 215px minmax(0, 1fr);
+      max-width: 1720px;
+      margin: 0 auto;
+      min-height: calc(100vh - 76px);
+    }
+
+    .sidebar {
+      padding: 22px 14px;
+      border-right: 1px solid rgba(124, 58, 237, 0.2);
+      background: rgba(7, 5, 16, 0.75);
+      backdrop-filter: blur(12px);
+      position: relative;
+      z-index: 2;
+    }
+
+    .side-label {
+      font-family: var(--font-hud);
+      font-size: 11px;
+      letter-spacing: 2.2px;
+      color: #8278a4;
+      padding: 0 14px 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      color: #b4aacf;
+      padding: 11px 14px;
+      border-radius: 12px;
+      margin: 4px 0;
+      transition: transform 0.2s var(--ease-spring), color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+      font-weight: 700;
+      font-size: 13px;
+      border: 1px solid transparent;
+    }
+
+    .nav:hover, .nav.active {
+      color: #fff;
+      transform: translateX(3px);
+      border-color: rgba(192, 132, 252, 0.45);
+      background: linear-gradient(100deg, rgba(109, 40, 217, 0.35), rgba(14, 165, 233, 0.16));
+      box-shadow: inset 3px 0 #c084fc, 0 0 24px rgba(147, 51, 234, 0.18);
+    }
+
+    .nav .ico { font-size: 16px; width: 22px; text-align: center; }
+
+    .sidebox {
+      margin-top: 26px;
+      padding: 16px 13px;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      border-radius: 16px;
+      background: linear-gradient(155deg, rgba(33, 16, 68, 0.8), rgba(11, 16, 36, 0.88));
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .sidebox strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 12px;
+      letter-spacing: 0.7px;
+      margin-top: 6px;
+    }
+
+    .sidebox small {
+      color: #b2a8cf;
+      font-size: 11px;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* =====================================================================
+       MAIN CONTENT, ANNOUNCEMENT & HERO
+       ===================================================================== */
+    main {
+      min-width: 0;
+      padding: 20px clamp(14px, 3vw, 38px) 54px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .announce {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 0 0 18px;
+      padding: 10px 15px;
+      border: 1px solid rgba(103, 232, 249, 0.28);
+      border-radius: 12px;
+      background: rgba(13, 10, 26, 0.88);
+      color: #d8cef0;
+      font-size: 12px;
+      flex-wrap: wrap;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .announce-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .announce b {
+      font-family: var(--font-hud);
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #67e8f9;
+      text-transform: uppercase;
+    }
+
+    .pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ade80;
+      box-shadow: 0 0 12px #4ade80;
+      flex: none;
+      animation: liveDot 2s ease-in-out infinite;
+    }
+
+    @keyframes liveDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.75; }
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      align-items: center;
+      gap: 24px;
+      min-height: 320px;
+      padding: clamp(24px, 4vw, 42px);
+      border: 1px solid rgba(168, 85, 247, 0.52);
+      border-radius: 26px;
+      background:
+        radial-gradient(ellipse 65% 75% at 84% 48%, rgba(192, 38, 211, 0.34), transparent 55%),
+        radial-gradient(ellipse 55% 60% at 72% 12%, rgba(14, 165, 233, 0.28), transparent 55%),
+        linear-gradient(118deg, rgba(16, 9, 32, 0.96), rgba(14, 21, 44, 0.94) 56%, rgba(25, 13, 44, 0.96));
+      box-shadow: 0 24px 75px rgba(0, 0, 0, 0.65), 0 0 calc(50px * var(--glow-strength)) rgba(147, 51, 234, 0.2);
+    }
+
+    .hero:before {
+      content: 'HEXLO';
+      position: absolute;
+      right: 3%;
+      top: 4%;
+      font-family: var(--font-display);
+      font-size: clamp(92px, 15vw, 195px);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      color: rgba(255, 255, 255, 0.045);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      font-family: var(--font-hud);
+      color: #67e8f9;
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 4.8vw, 58px);
+      line-height: 1.05;
+      margin: 10px 0 14px;
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      text-shadow: 0 10px 35px rgba(0, 0, 0, 0.65);
+    }
+
+    .hero h1 span {
+      background: linear-gradient(95deg, #f0abfc, #a78bfa 45%, #67e8f9 95%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientShift 5s linear infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .hero p {
+      color: #d0c6e8;
+      max-width: 575px;
+      margin: 0 0 22px;
+      font-size: 14px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 11px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 0;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 12px;
+      padding: 11px 18px;
+      font-family: var(--font-hud);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.22s var(--ease-spring), filter 0.2s ease, box-shadow 0.22s ease;
+    }
+
+    .btn.primary {
+      color: #fff;
+      background: linear-gradient(105deg, #9333ea, #db2777 58%, #0284c7);
+      box-shadow: 0 10px 28px rgba(168, 85, 247, 0.42);
+    }
+
+    .btn.secondary {
+      color: #ede5ff;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(167, 139, 250, 0.45);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.12);
+    }
+
+    .pcbox {
+      justify-self: end;
+      width: min(100%, 340px);
+      padding: 19px;
+      border-radius: 19px;
+      border: 1px solid rgba(103, 232, 249, 0.45);
+      background: rgba(8, 11, 24, 0.88);
+      backdrop-filter: blur(14px);
+      box-shadow: inset 0 0 28px rgba(124, 58, 237, 0.16), 0 16px 40px rgba(0, 0, 0, 0.55);
+    }
+
+    .pc-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-hud);
+      font-size: 12px;
+      font-weight: 700;
+      color: #c4b8e0;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .online { color: #4ade80; font-size: 11px; }
+
+    .pcbox h3 {
+      font-family: var(--font-display);
+      font-size: 17px;
+      margin: 10px 0 6px;
+      font-weight: 800;
+    }
+
+    .pcspec {
+      font-size: 12px;
+      color: #cbc2e3;
+      line-height: 1.8;
+    }
+
+    .pcbar {
+      height: 6px;
+      border-radius: 99px;
+      background: rgba(56, 44, 88, 0.7);
+      margin-top: 13px;
+      overflow: hidden;
+    }
+
+    .pcbar span {
+      display: block;
+      width: 92%;
+      height: 100%;
+      background: linear-gradient(90deg, #a855f7, #38bdf8, #4ade80);
+      border-radius: 99px;
+    }
+
+    /* =====================================================================
+       STAT STRIP & SECTION HEADINGS
+       ===================================================================== */
+    .statstrip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0 30px;
+    }
+
+    .stat {
+      padding: 15px 16px;
+      border: 1px solid rgba(124, 58, 237, 0.28);
+      border-radius: 16px;
+      background: linear-gradient(145deg, rgba(22, 16, 38, 0.88), rgba(10, 10, 20, 0.92));
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+      transition: transform 0.22s var(--ease-spring), border-color 0.2s ease;
+    }
+
+    .stat:hover {
+      transform: translateY(-3px);
+      border-color: rgba(103, 232, 249, 0.5);
+    }
+
+    .stat small {
+      display: block;
+      font-family: var(--font-hud);
+      color: #9e91ba;
+      font-size: 11px;
+      letter-spacing: 1.6px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 24px;
+      margin-top: 4px;
+      background: linear-gradient(90deg, #ffffff, #d8b4fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .stat em {
+      font-style: normal;
+      font-family: var(--font-mono);
+      color: #67e8f9;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .sectionhead {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 34px 0 16px;
+    }
+
+    .sectionhead h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.5vw, 28px);
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      background: linear-gradient(90deg, #fff, #d8b4fe 55%, #67e8f9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .sectionhead h2:after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 3px;
+      margin-top: 8px;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #e879f9, #38bdf8);
+    }
+
+    .sectionhead p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 7px 0 0;
+    }
+
+    .live {
+      font-family: var(--font-mono);
+      color: #4ade80;
+      font-size: 11px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    /* =====================================================================
+       FILTERS & TOOLBAR
+       ===================================================================== */
+    .toolbar-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 0 18px;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-family: var(--font-hud);
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: #9689b8;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 2px;
+    }
+
+    .filters { display: flex; gap: 7px; flex-wrap: wrap; }
+
+    .filter, .pfilter {
+      border: 1px solid rgba(124, 58, 237, 0.36);
+      color: #d7cee9;
+      background: rgba(14, 11, 26, 0.9);
+      padding: 7px 13px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: var(--font-hud);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      transition: transform 0.18s var(--ease-spring), background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .filter:hover, .pfilter:hover { transform: translateY(-1px); color: #fff; }
+
+    .filter.active {
+      background: linear-gradient(105deg, #7e22ce, #0e7490);
+      border-color: #c084fc;
+      color: #fff;
+      box-shadow: 0 0 18px rgba(139, 92, 246, 0.35);
+    }
+
+    .pfilter.active {
+      background: linear-gradient(105deg, #be185d, #6d28d9);
+      border-color: #f472b6;
+      color: #fff;
+      box-shadow: 0 0 18px rgba(236, 72, 153, 0.35);
+    }
+
+    .count {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: #b4a9cf;
+      font-weight: 700;
+    }
+
+    .extra-tools { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; }
+
+    .toolbtn {
+      border: 1px solid rgba(139, 92, 246, 0.42);
+      border-radius: 10px;
+      background: rgba(18, 13, 33, 0.92);
+      color: #efe6ff;
+      padding: 8px 13px;
+      font-family: var(--font-hud);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.18s var(--ease-spring), border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .toolbtn:hover {
+      transform: translateY(-1px);
+      border-color: #67e8f9;
+      box-shadow: 0 0 18px rgba(34, 211, 238, 0.2);
+    }
+
+    .toolbtn.on {
+      background: linear-gradient(105deg, rgba(126, 34, 206, 0.55), rgba(190, 24, 93, 0.45));
+      border-color: #e879f9;
+      color: #fff;
+    }
+
+    /* =====================================================================
+       28-GAME CATALOG CARDS WITH PROCEDURAL SVG ARTWORK & DEAL GUIDES
+       ===================================================================== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      --c1: #6d28d9;
+      --c2: #111b38;
+      --sheen-x: 50%;
+      --sheen-y: 50%;
+      overflow: hidden;
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      border-radius: 20px;
+      background: linear-gradient(155deg, rgba(24, 16, 38, 0.95), rgba(9, 8, 18, 0.98));
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform 0.24s var(--ease-spring), border-color 0.28s ease, box-shadow 0.28s ease;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .card:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 4;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      background: radial-gradient(260px circle at var(--sheen-x) var(--sheen-y), rgba(255, 255, 255, 0.14), transparent 68%);
+    }
+
+    .card:hover:before { opacity: calc(1 * var(--glow-strength)); }
+
+    .card:hover {
+      border-color: rgba(192, 132, 252, 0.8);
+      box-shadow: 0 22px 46px rgba(0, 0, 0, 0.72), 0 0 calc(32px * var(--glow-strength)) rgba(168, 85, 247, 0.28);
+    }
+
+    .art {
+      height: 176px;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--c1), var(--c2));
+    }
+
+    .art .svg-banner {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      transition: transform 0.65s var(--ease-smooth);
+    }
+
+    .card:hover .art .svg-banner {
+      transform: scale(calc(1.05 + 0.03 * var(--motion-scale)));
+    }
+
+    .art .cover-shade {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(5, 4, 12, 0.08) 15%, rgba(5, 4, 12, 0.45) 55%, rgba(5, 4, 12, 0.94) 100%);
+    }
+
+    .arttitle {
+      position: relative;
+      z-index: 1;
+      font-family: var(--font-display);
+      font-size: clamp(15px, 1.55vw, 20px);
+      font-weight: 900;
+      letter-spacing: -0.3px;
+      text-shadow: 0 3px 16px rgba(0,0,0,0.95);
+      max-width: 72%;
+      line-height: 1.12;
+    }
+
+    .price-pill {
+      position: absolute;
+      z-index: 2;
+      left: 12px;
+      top: 12px;
+      padding: 4px 9px;
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      backdrop-filter: blur(8px);
+    }
+
+    .price-pill.free {
+      background: rgba(6, 78, 59, 0.88);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.6);
+    }
+
+    .price-pill.paid {
+      background: rgba(76, 29, 149, 0.88);
+      color: #e9d5ff;
+      border: 1px solid rgba(168, 85, 247, 0.6);
+    }
+
+    .fps {
+      position: absolute;
+      z-index: 2;
+      right: 11px;
+      bottom: 11px;
+      padding: 4px 9px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 99px;
+      background: rgba(8, 7, 20, 0.86);
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      color: #e2daf7;
+    }
+
+    .body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .row h3 {
+      flex: 1;
+      font-family: var(--font-display);
+      font-size: 14px;
+      margin: 0;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .badge {
+      font-family: var(--font-hud);
+      font-size: 11px;
+      color: #a5f3fc;
+      background: rgba(8, 51, 68, 0.85);
+      border: 1px solid rgba(21, 94, 117, 0.8);
+      padding: 3px 8px;
+      border-radius: 99px;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    .favorite {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      border-radius: 9px;
+      padding: 5px 9px;
+      cursor: pointer;
+      transition: transform 0.2s var(--ease-spring), background 0.2s ease;
+    }
+
+    .favorite:hover { transform: scale(1.1); background: rgba(255, 255, 255, 0.16); }
+    .favorite.saved {
+      background: rgba(131, 24, 67, 0.9);
+      border-color: rgba(244, 114, 182, 0.6);
+      color: #fbcfe8;
+    }
+
+    .plat-row { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 4px; }
+
+    .plat-tag {
+      font-family: var(--font-hud);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 7px;
+      background: rgba(25, 20, 44, 0.9);
+      border: 1px solid rgba(124, 58, 237, 0.34);
+      color: #dcd3f5;
+    }
+
+    .desc {
+      font-size: 12.5px;
+      color: #c2b8dc;
+      margin: 7px 0 11px;
+      line-height: 1.5;
+    }
+
+    .deal-box {
+      margin: 0 0 14px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(13, 10, 27, 0.92);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex: 1;
+    }
+
+    .deal-line { font-size: 11.5px; color: #d4cce9; line-height: 1.45; }
+    .deal-line b { font-family: var(--font-hud); font-size: 12px; color: #67e8f9; font-weight: 700; }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding-top: 11px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .store-hints { display: flex; gap: 4px; flex-wrap: wrap; }
+
+    .store-chip {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      padding: 2px 6px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #c2b8dc;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .play {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 0;
+      cursor: pointer;
+      color: #fff;
+      font-family: var(--font-hud);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      padding: 8px 13px;
+      border-radius: 10px;
+      background: linear-gradient(105deg, #7c3aed, #db2777 56%, #0284c7);
+      box-shadow: 0 4px 18px rgba(124, 58, 237, 0.4);
+      white-space: nowrap;
+      transition: transform 0.2s var(--ease-spring), filter 0.2s ease;
+    }
+
+    .play:hover { filter: brightness(1.16); transform: translateY(-2px); }
+
+    /* =====================================================================
+       STOREFRONTS & STREAMING SECTIONS
+       ===================================================================== */
+    .stores-section { margin-top: 36px; }
+
+    .store-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
+    .store-card {
+      border: 1px solid rgba(124, 58, 237, 0.28);
+      border-radius: 18px;
+      padding: 18px;
+      background: linear-gradient(150deg, rgba(22, 16, 38, 0.92), rgba(9, 8, 18, 0.96));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      transition: transform 0.24s var(--ease-spring), border-color 0.25s ease;
+    }
+
+    .store-card:hover { border-color: rgba(103, 232, 249, 0.6); transform: translateY(-4px); }
+
+    .store-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .store-title { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: 14px; }
+    .store-ico {
+      width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
+      font-size: 18px; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .store-devices {
+      font-family: var(--font-mono); font-size: 9.5px; color: #67e8f9;
+      background: rgba(8, 51, 68, 0.85); border: 1px solid rgba(21, 94, 117, 0.8);
+      padding: 3px 8px; border-radius: 99px; font-weight: 700;
+    }
+    .store-card p { margin: 0; font-size: 12.5px; color: #beb4d8; }
+    .store-link {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      text-decoration: none; padding: 9px 12px; border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(139, 92, 246, 0.42);
+      color: #f5efff; font-family: var(--font-hud); font-size: 13px; font-weight: 700;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .store-link:hover { background: linear-gradient(105deg, #7c3aed, #0284c7); border-color: #c084fc; }
+
+    .bottomgrid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; margin-top: 32px; }
+    .panel {
+      border: 1px solid rgba(124, 58, 237, 0.28); border-radius: 18px; padding: 18px;
+      background: linear-gradient(145deg, rgba(22, 16, 38, 0.92), rgba(9, 8, 18, 0.96));
+    }
+    .panel h3 { margin: 0 0 12px; font-family: var(--font-display); font-size: 14px; color: #e9d5ff; font-weight: 800; }
+    .streamrow {
+      display: flex; justify-content: space-between; gap: 10px; padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08); color: #cfc7e5; font-size: 12.5px;
+    }
+    .streamrow:last-child { border: 0; }
+    .status { font-family: var(--font-mono); font-size: 11px; color: #4ade80; }
+    .shortcut { display: flex; gap: 9px; flex-wrap: wrap; }
+    .shortcut a {
+      border: 1px solid rgba(139, 92, 246, 0.36); border-radius: 10px; padding: 9px 12px;
+      text-decoration: none; color: #dfd3f7; font-family: var(--font-hud); font-size: 12.5px; font-weight: 700;
+      background: rgba(255, 255, 255, 0.04); transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .shortcut a:hover { border-color: #c084fc; color: #fff; }
+
+    .footer {
+      color: #8b82a8; font-size: 11px; text-align: center; padding: 26px 10px 6px;
+      border-top: 1px solid rgba(124, 58, 237, 0.2); margin-top: 30px;
+    }
+
+    /* =====================================================================
+       MODALS, IMMEDIATE LOGIN/SIGNUP GATE & GO LIVE SEO MODAL
+       ===================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 150;
+      background: rgba(3, 2, 10, 0.84);
+      backdrop-filter: blur(14px);
+      display: none;
+      pointer-events: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      overflow-y: auto;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+      pointer-events: auto;
+    }
+
+    .modal {
+      width: min(790px, 100%);
+      max-height: 90vh;
+      overflow-y: auto;
+      border: 1px solid rgba(168, 85, 247, 0.65);
+      border-radius: 24px;
+      background: linear-gradient(160deg, rgba(22, 16, 42, 0.98), rgba(9, 8, 19, 0.99));
+      box-shadow: 0 28px 85px rgba(0, 0, 0, 0.88), 0 0 55px rgba(147, 51, 234, 0.25);
+      position: relative;
+      pointer-events: auto;
+      animation: modalSpring 0.34s var(--ease-spring) both;
+    }
+
+    @keyframes modalSpring {
+      from { opacity: 0; transform: scale(0.92) translateY(18px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .modal-hero {
+      position: relative;
+      height: 175px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.35);
+    }
+
+    .modal-hero-art {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .modal-hero:after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(9, 8, 19, 0.15), rgba(9, 8, 19, 0.96));
+      z-index: 1;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 5;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(9, 8, 19, 0.9);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: transform 0.2s var(--ease-spring), background 0.2s ease;
+    }
+
+    .modal-close:hover { transform: rotate(90deg) scale(1.08); background: #9333ea; }
+
+    .modal-hero-content { position: relative; z-index: 2; }
+    .modal-badges { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 6px; }
+    .modal-title { margin: 0; font-family: var(--font-display); font-size: clamp(20px, 3.6vw, 28px); font-weight: 900; }
+    .modal-body { padding: 20px; display: flex; flex-direction: column; gap: 18px; }
+    .modal-desc { margin: 0; color: #d5cce9; font-size: 13px; }
+    .modal-sec-title {
+      font-family: var(--font-hud); font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: #67e8f9; font-weight: 700; margin: 0 0 10px;
+    }
+    .modal-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .m-store-btn {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 12px 14px; border-radius: 13px; text-decoration: none;
+      border: 1px solid rgba(139, 92, 246, 0.42); background: rgba(19, 14, 36, 0.92); color: #fff;
+      transition: transform 0.2s var(--ease-spring), border-color 0.2s ease, background 0.2s ease;
+    }
+    .m-store-btn:hover {
+      border-color: #c084fc;
+      background: linear-gradient(105deg, rgba(88, 28, 135, 0.88), rgba(14, 116, 144, 0.85));
+      transform: translateY(-2px);
+    }
+    .m-store-left { display: flex; flex-direction: column; gap: 2px; }
+    .m-store-left strong { font-size: 13px; }
+    .m-store-left small { font-size: 11px; color: #bfb5da; }
+    .m-store-tag {
+      font-family: var(--font-mono); font-size: 10px; font-weight: 700; padding: 4px 8px;
+      border-radius: 7px; background: rgba(255, 255, 255, 0.1); color: #67e8f9; white-space: nowrap;
+    }
+    .modal-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .m-step-box { padding: 14px; border-radius: 14px; background: rgba(14, 11, 26, 0.92); border: 1px solid rgba(124, 58, 237, 0.3); }
+    .m-step-box h5 { margin: 0 0 8px; font-family: var(--font-hud); font-size: 14px; color: #e9d5ff; font-weight: 700; }
+    .m-step-box ol { margin: 0; padding-left: 18px; color: #c4bade; font-size: 12px; line-height: 1.65; }
+
+    /* Auth Gate & Profile Menu */
+    .auth-area { position: relative; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .auth-trigger {
+      border: 1px solid rgba(168, 85, 247, 0.7);
+      background: linear-gradient(105deg, rgba(126, 34, 206, 0.92), rgba(14, 116, 144, 0.9));
+      color: #fff; padding: 9px 15px; border-radius: 12px; font-family: var(--font-hud);
+      font-size: 13px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase;
+      cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+      box-shadow: 0 0 22px rgba(147, 51, 234, 0.4); white-space: nowrap;
+    }
+    .userpill-btn {
+      border: 1px solid rgba(139, 92, 246, 0.5); background: rgba(19, 14, 36, 0.92); color: #f5f0ff;
+      padding: 5px 12px 5px 6px; border-radius: 14px; display: inline-flex; align-items: center;
+      gap: 9px; cursor: pointer; text-align: left; white-space: nowrap;
+      transition: transform 0.22s var(--ease-spring), border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .userpill-btn.just-authenticated {
+      animation: profilePillArrive 0.85s var(--ease-spring) both;
+    }
+    @keyframes profilePillArrive {
+      0% {
+        transform: scale(0.76) translateY(-6px);
+        border-color: #67e8f9;
+        box-shadow: 0 0 0 0 rgba(103, 232, 249, 0.85), 0 0 34px rgba(232, 121, 249, 0.85);
+      }
+      55% {
+        transform: scale(1.07) translateY(0);
+        border-color: #e879f9;
+        box-shadow: 0 0 0 12px rgba(103, 232, 249, 0), 0 0 28px rgba(168, 85, 247, 0.65);
+      }
+      100% {
+        transform: scale(1) translateY(0);
+        border-color: rgba(139, 92, 246, 0.5);
+        box-shadow: none;
+      }
+    }
+    .avatar {
+      width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+      background: linear-gradient(135deg, #ff42d0, #5824cb); font-family: var(--font-display);
+      font-weight: 800; font-size: 12px; border: 1px solid rgba(232, 121, 249, 0.7); flex-shrink: 0;
+    }
+    .profile-menu {
+      position: absolute; right: 0; top: calc(100% + 10px); width: 270px;
+      border: 1px solid rgba(139, 92, 246, 0.6); border-radius: 18px;
+      background: linear-gradient(160deg, rgba(21, 15, 41, 0.98), rgba(9, 8, 19, 0.99));
+      backdrop-filter: blur(20px); box-shadow: 0 22px 55px rgba(0, 0, 0, 0.85);
+      padding: 12px; display: none; z-index: 80;
+    }
+    .profile-menu.open { display: block; }
+    .pm-header { padding: 8px 10px 11px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 8px; }
+    .pm-header strong { display: block; font-family: var(--font-display); font-size: 14px; }
+    .pm-header small { display: block; font-size: 11px; color: #b2a8cf; }
+    .pm-badge {
+      display: inline-block; margin-top: 6px; font-family: var(--font-mono); font-size: 10px;
+      font-weight: 700; padding: 2px 8px; border-radius: 99px;
+      background: rgba(8, 51, 68, 0.85); color: #67e8f9; border: 1px solid rgba(21, 94, 117, 0.8);
+    }
+    .pm-item {
+      width: 100%; border: 0; background: transparent; color: #e4dcf9; padding: 9px 10px;
+      border-radius: 10px; font-size: 12px; font-weight: 700; display: flex;
+      align-items: center; justify-content: space-between; cursor: pointer; text-align: left;
+    }
+    .pm-item:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+    .pm-item.danger { color: #fda4af; border-top: 1px solid rgba(255, 255, 255, 0.08); margin-top: 4px; padding-top: 11px; }
+
+    .auth-modal {
+      width: min(495px, 100%);
+      max-height: 92vh;
+      overflow-y: auto;
+      border: 1px solid rgba(168, 85, 247, 0.72);
+      border-radius: 26px;
+      background: linear-gradient(165deg, rgba(22, 16, 44, 0.98), rgba(8, 7, 18, 0.99));
+      backdrop-filter: blur(24px);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.9), 0 0 65px rgba(147, 51, 234, 0.3);
+      padding: 24px;
+      position: relative;
+      pointer-events: auto;
+      animation: modalSpring 0.32s var(--ease-spring) both;
+    }
+
+    .auth-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; padding-right: 36px; }
+    .auth-brand-ico {
+      width: 44px; height: 44px; border-radius: 13px; display: grid; place-items: center;
+      background: linear-gradient(135deg, #e879f9, #6d28d9 55%, #0284c7);
+      font-family: var(--font-display); font-weight: 900; font-size: 20px;
+      box-shadow: 0 0 24px rgba(168, 85, 247, 0.65); flex-shrink: 0;
+    }
+
+    .auth-tabs {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px;
+      border-radius: 13px; background: rgba(11, 8, 22, 0.95);
+      border: 1px solid rgba(124, 58, 237, 0.36); margin-bottom: 15px;
+    }
+    .auth-tab {
+      border: 0; background: transparent; color: #b2a8cf; padding: 9px; border-radius: 9px;
+      font-family: var(--font-hud); font-size: 13px; font-weight: 700; letter-spacing: 0.6px;
+      text-transform: uppercase; cursor: pointer;
+    }
+    .auth-tab.active { background: linear-gradient(105deg, #7e22ce, #0e7490); color: #fff; }
+
+    .auth-form { display: none; flex-direction: column; gap: 12px; }
+    .auth-form.active { display: flex; }
+
+    .field { display: flex; flex-direction: column; gap: 5px; }
+    .field label {
+      font-family: var(--font-hud); font-size: 12px; font-weight: 700; letter-spacing: 0.7px;
+      text-transform: uppercase; color: #d6ccef; display: flex; justify-content: space-between; align-items: center;
+    }
+    .input-wrap { position: relative; display: flex; align-items: center; }
+    .auth-input, .auth-select {
+      width: 100%; border: 1px solid rgba(124, 58, 237, 0.44); border-radius: 12px;
+      background: rgba(13, 10, 26, 0.96); color: #fff; padding: 10px 14px; font-size: 13px; outline: none;
+    }
+    .auth-input:focus, .auth-select:focus { border-color: #c084fc; box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.25); }
+    .eye-btn { position: absolute; right: 10px; border: 0; background: transparent; color: #b2a8cf; cursor: pointer; font-size: 14px; }
+
+    .strength-bar { height: 5px; border-radius: 99px; background: rgba(32, 24, 54, 0.95); overflow: hidden; margin-top: 4px; }
+    .strength-bar i { display: block; height: 100%; width: 0%; transition: width 0.25s ease, background 0.25s ease; }
+    .strength-meta { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10px; color: #a59bc7; margin-top: 3px; }
+
+    .auth-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 12px; color: #c2b8dc; }
+    .auth-check { display: inline-flex; align-items: center; gap: 7px; cursor: pointer; }
+    .auth-check input { accent-color: #a855f7; width: 15px; height: 15px; }
+    .link-btn { border: 0; background: transparent; color: #67e8f9; font-size: 12px; font-weight: 700; cursor: pointer; padding: 0; }
+    .link-btn:hover { text-decoration: underline; }
+
+    .auth-error {
+      display: none; padding: 9px 12px; border-radius: 10px;
+      background: rgba(76, 5, 25, 0.85); border: 1px solid rgba(251, 113, 133, 0.55);
+      color: #fecdd3; font-size: 12px; font-weight: 600;
+    }
+    .auth-error.show { display: block; }
+
+    .auth-submit {
+      width: 100%; border: 0; border-radius: 12px; padding: 12px;
+      background: linear-gradient(105deg, #9333ea, #db2777 56%, #0284c7);
+      color: #fff; font-family: var(--font-hud); font-size: 14px; font-weight: 700;
+      letter-spacing: 0.7px; text-transform: uppercase; cursor: pointer;
+      box-shadow: 0 8px 26px rgba(147, 51, 234, 0.42);
+    }
+
+    .demo-btn {
+      width: 100%; border: 1px solid rgba(139, 92, 246, 0.48); border-radius: 12px;
+      padding: 10px 14px; background: rgba(19, 14, 38, 0.94); color: #efe6ff;
+      font-family: var(--font-hud); font-size: 13px; font-weight: 700; cursor: pointer;
+    }
+    .demo-btn:hover { border-color: #67e8f9; }
+
+    .guest-preview-btn {
+      width: 100%;
+      margin-top: 4px;
+      border: 1px dashed rgba(176, 166, 206, 0.35);
+      border-radius: 11px;
+      padding: 8px 12px;
+      background: transparent;
+      color: #b4aacf;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+    .guest-preview-btn:hover { color: #fff; border-color: #67e8f9; }
+
+    /* 2-Step Recovery Styles */
+    .recovery-step { display: none; flex-direction: column; gap: 11px; }
+    .recovery-step.active { display: flex; }
+    .dispatch-banner {
+      padding: 12px 14px; border-radius: 14px;
+      background: linear-gradient(145deg, rgba(9, 36, 54, 0.92), rgba(22, 13, 44, 0.94));
+      border: 1px solid rgba(56, 189, 248, 0.55);
+    }
+    .dispatch-code-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      background: rgba(7, 6, 17, 0.95); border: 1px solid rgba(139, 92, 246, 0.45);
+      padding: 8px 12px; border-radius: 10px; margin: 6px 0;
+    }
+    .dispatch-code { font-family: var(--font-mono); font-size: 20px; font-weight: 700; letter-spacing: 5px; color: #fff; }
+    .copy-code-btn {
+      border: 1px solid rgba(103, 232, 249, 0.45); background: rgba(8, 51, 68, 0.85);
+      color: #a5f3fc; font-size: 11px; font-weight: 700; padding: 6px 10px; border-radius: 8px; cursor: pointer;
+    }
+    .mailto-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      text-decoration: none; border: 1px solid rgba(192, 132, 252, 0.6);
+      background: linear-gradient(105deg, #581c87, #0e7490); color: #fff;
+      font-size: 11.5px; font-weight: 700; padding: 8px 11px; border-radius: 9px; width: 100%;
+    }
+    .provider-box {
+      padding: 11px 12px; border-radius: 13px; background: rgba(12, 9, 24, 0.94);
+      border: 1px solid rgba(124, 58, 237, 0.38);
+    }
+    .provider-pills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 8px; }
+    .provider-pill {
+      display: flex; align-items: center; justify-content: space-between; padding: 7px 9px;
+      border-radius: 8px; background: rgba(20, 16, 38, 0.95); border: 1px solid rgba(124, 58, 237, 0.34);
+      color: #dfd6f8; text-decoration: none; font-size: 11px; font-weight: 700;
+    }
+    .provider-pill:hover { border-color: #67e8f9; color: #fff; }
+
+    /* Go Live & Rank on Google / Edge Modal Steps */
+    .seo-step {
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(13, 10, 27, 0.92);
+      border: 1px solid rgba(56, 189, 248, 0.32);
+    }
+    .seo-step h4 {
+      margin: 0 0 6px;
+      font-family: var(--font-hud);
+      font-size: 15px;
+      color: #67e8f9;
+      font-weight: 700;
+    }
+    .seo-step p { margin: 0; font-size: 12.5px; color: #d0c6e8; line-height: 1.55; }
+    .seo-links-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .seo-ext-link {
+      display: inline-flex; align-items: center; gap: 5px; padding: 7px 11px;
+      border-radius: 9px; background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(168, 85, 247, 0.45); font-size: 11.5px; font-weight: 700;
+      text-decoration: none; color: #f3e8ff;
+    }
+    .seo-ext-link:hover { border-color: #67e8f9; background: rgba(14, 116, 144, 0.4); }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 22px; right: 22px; z-index: 350;
+      padding: 12px 17px; border-radius: 13px; background: rgba(24, 17, 46, 0.96);
+      border: 1px solid rgba(192, 132, 252, 0.75); color: #fff; font-size: 12.5px;
+      font-weight: 700; box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7);
+      opacity: 0; transform: translateY(14px); pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.3s var(--ease-spring);
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* =====================================================================
+       AUTHENTICATION SUCCESS CELEBRATION & WARP-IN OVERLAY (#authSuccessOverlay)
+       ===================================================================== */
+    #authSuccessOverlay {
+      position: fixed;
+      inset: 0;
+      z-index: 320;
+      display: none;
+      pointer-events: none;
+      place-items: center;
+      overflow: hidden;
+      opacity: 0;
+      background:
+        radial-gradient(circle at 50% 48%, rgba(168, 85, 247, 0.36), transparent 54%),
+        radial-gradient(circle at 72% 28%, rgba(56, 189, 248, 0.28), transparent 48%),
+        rgba(4, 3, 12, 0.9);
+      backdrop-filter: blur(18px) saturate(150%);
+      transition: opacity 0.34s var(--ease-smooth), transform 0.45s var(--ease-smooth);
+    }
+
+    #authSuccessOverlay.is-visible {
+      display: grid;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #authSuccessOverlay.is-exiting {
+      opacity: 0;
+      transform: scale(1.05);
+      pointer-events: none !important;
+    }
+
+    #authBurstCanvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .auth-shockwave {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 2px solid rgba(103, 232, 249, 0.85);
+      box-shadow: 0 0 36px rgba(103, 232, 249, 0.55), inset 0 0 28px rgba(232, 121, 249, 0.45);
+      transform: translate(-50%, -50%) scale(0.2);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .auth-shockwave.ring-2 {
+      border-color: rgba(232, 121, 249, 0.8);
+      box-shadow: 0 0 42px rgba(232, 121, 249, 0.55);
+    }
+
+    #authSuccessOverlay.is-armed .auth-shockwave.ring-1 {
+      animation: shockwavePulse 1.15s var(--ease-smooth) forwards;
+    }
+
+    #authSuccessOverlay.is-armed .auth-shockwave.ring-2 {
+      animation: shockwavePulse 1.25s 0.14s var(--ease-smooth) forwards;
+    }
+
+    @keyframes shockwavePulse {
+      0% { transform: translate(-50%, -50%) scale(0.25); opacity: 0.95; }
+      70% { opacity: 0.45; }
+      100% { transform: translate(-50%, -50%) scale(7.5); opacity: 0; }
+    }
+
+    .auth-laser-sweep {
+      position: absolute;
+      left: -15%;
+      right: -15%;
+      top: 50%;
+      height: 2px;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent, #e879f9 22%, #67e8f9 50%, #4ade80 78%, transparent);
+      box-shadow: 0 0 26px rgba(103, 232, 249, 0.9), 0 0 48px rgba(232, 121, 249, 0.65);
+      transform: scaleX(0);
+      opacity: 0;
+    }
+
+    #authSuccessOverlay.is-armed .auth-laser-sweep {
+      animation: authLaserFlash 0.95s var(--ease-spring) forwards;
+    }
+
+    @keyframes authLaserFlash {
+      0% { transform: scaleX(0.05); opacity: 0; }
+      45% { transform: scaleX(1.03); opacity: 1; }
+      100% { transform: scaleX(1); opacity: 0.25; }
+    }
+
+    .auth-warp-card {
+      position: relative;
+      z-index: 3;
+      pointer-events: auto;
+      width: min(510px, 92vw);
+      padding: clamp(26px, 5vw, 38px) clamp(20px, 4vw, 32px);
+      text-align: center;
+      border-radius: 26px;
+      background: linear-gradient(160deg, rgba(19, 13, 40, 0.92), rgba(8, 7, 20, 0.96));
+      border: 1px solid rgba(103, 232, 249, 0.6);
+      box-shadow:
+        0 28px 90px rgba(0, 0, 0, 0.86),
+        0 0 55px rgba(168, 85, 247, 0.36),
+        inset 0 0 36px rgba(56, 189, 248, 0.14);
+      transform: scale(0.86) translateY(20px);
+      opacity: 0;
+      transition: transform 0.48s var(--ease-spring), opacity 0.36s ease;
+    }
+
+    #authSuccessOverlay.is-armed .auth-warp-card {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+
+    #authSuccessOverlay.is-armed .hud-corner {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    .auth-status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      color: #6ee7b7;
+      background: rgba(6, 78, 59, 0.72);
+      border: 1px solid rgba(52, 211, 153, 0.65);
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.28);
+      margin-bottom: 14px;
+    }
+
+    .auth-emblem-stack {
+      position: relative;
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 14px;
+      display: grid;
+      place-items: center;
+    }
+
+    .auth-orbit-ring {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 2px dashed rgba(103, 232, 249, 0.65);
+      pointer-events: none;
+      animation: orbitSpin 5s linear infinite;
+    }
+
+    @keyframes orbitSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .auth-warp-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 900;
+      color: #fff;
+      background: linear-gradient(135deg, #e879f9, #7e22ce 52%, #0284c7);
+      border: 1.5px solid rgba(255, 255, 255, 0.45);
+      box-shadow: 0 0 34px rgba(168, 85, 247, 0.8);
+    }
+
+    .auth-check-badge {
+      position: absolute;
+      right: -4px;
+      bottom: -4px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981, #059669);
+      border: 2px solid #070512;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 0 18px rgba(74, 222, 128, 0.85);
+    }
+
+    .auth-check-badge svg {
+      width: 16px;
+      height: 16px;
+      stroke: #fff;
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 24;
+      stroke-dashoffset: 24;
+    }
+
+    #authSuccessOverlay.is-armed .auth-check-badge svg {
+      animation: drawCheck 0.55s 0.25s var(--ease-smooth) forwards;
+    }
+
+    @keyframes drawCheck {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .auth-warp-title {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(22px, 4.5vw, 32px);
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      background: linear-gradient(95deg, #ffffff, #f0abfc 48%, #67e8f9 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .auth-warp-sub {
+      margin: 8px auto 16px;
+      max-width: 390px;
+      font-size: 13px;
+      color: #cfc6e8;
+    }
+
+    .auth-warp-bar {
+      width: min(310px, 100%);
+      height: 5px;
+      margin: 0 auto 14px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+
+    .auth-warp-bar i {
+      display: block;
+      width: 0%;
+      height: 100%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, #4ade80, #38bdf8 52%, #e879f9);
+      box-shadow: 0 0 16px rgba(103, 232, 249, 0.9);
+      transition: width 1.45s var(--ease-smooth);
+    }
+
+    #authSuccessOverlay.is-armed .auth-warp-bar i {
+      width: 100%;
+    }
+
+    .auth-warp-skip {
+      position: relative;
+      z-index: 5;
+      border: 1px solid rgba(103, 232, 249, 0.55);
+      background: rgba(14, 116, 144, 0.35);
+      color: #cffafe;
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-family: var(--font-hud);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.2s var(--ease-spring), border-color 0.2s ease;
+    }
+
+    .auth-warp-skip:hover {
+      transform: translateY(-1px);
+      border-color: #e879f9;
+      color: #fff;
+    }
+
+    html[data-motion-mode="balanced"] .auth-shockwave,
+    html[data-motion-mode="balanced"] .auth-orbit-ring {
+      display: none;
+    }
+
+    /* =====================================================================
+       RESPONSIVE BREAKPOINTS
+       ===================================================================== */
+    @media (max-width: 1220px) {
+      .top-controls .mode-text { display: none; }
+    }
+    @media (max-width: 1100px) {
+      .grid, .store-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .layout { grid-template-columns: 190px minmax(0, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .topbar { flex-wrap: wrap; padding: 10px 14px; gap: 9px; }
+      .brand { flex: 1; }
+      .searchwrap { order: 3; flex-basis: 100%; max-width: none; }
+      .top-controls { order: 4; flex-basis: 100%; justify-content: space-between; }
+      .layout { display: block; }
+      .sidebar { display: flex; gap: 6px; overflow-x: auto; padding: 8px 12px; border-right: 0; border-bottom: 1px solid rgba(124, 58, 237, 0.2); }
+      .side-label, .sidebox { display: none; }
+      .nav { flex: 0 0 auto; margin: 0; padding: 8px 12px; font-size: 12px; white-space: nowrap; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .pcbox { width: 100%; }
+      .statstrip { grid-template-columns: repeat(2, 1fr); }
+      .grid, .store-grid, .modal-links, .modal-steps, .provider-pills, .bottomgrid { grid-template-columns: 1fr; }
+      .pointer-glow { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Multi-Layered Starfield Canvas & Perspective Cyber-Grid Floor -->
+  <canvas id="universeCanvas" aria-hidden="true"></canvas>
+  <div class="cyber-floor" aria-hidden="true"></div>
+  <div class="pointer-glow" id="pointerGlow" aria-hidden="true"></div>
+
+  <!-- Brief Skippable Entrance Curtain -->
+  <div id="entryCurtain" role="region" aria-label="HEXLO entrance animation">
+    <div class="curtain-scan" aria-hidden="true"></div>
+    <div class="curtain-beam" aria-hidden="true"></div>
+    <div class="curtain-box">
+      <span class="hud-corner tl" aria-hidden="true"></span>
+      <span class="hud-corner tr" aria-hidden="true"></span>
+      <span class="hud-corner bl" aria-hidden="true"></span>
+      <span class="hud-corner br" aria-hidden="true"></span>
+      <div class="curtain-hex-badge">H</div>
+      <h2 class="curtain-title">WELCOME TO <span>HEXLO</span></h2>
+      <p class="curtain-sub">Initializing Multi-Platform Gaming Universe · 28 PC, Laptop &amp; Mobile Titles · Best Market Deals</p>
+      <div class="curtain-bar" aria-hidden="true"><i></i></div>
+      <button class="curtain-enter-btn" type="button" id="skipCurtainBtn" data-action="enter-hub">Enter Hub Now →</button>
+    </div>
+  </div>
+
+  <!-- Sticky Top Header -->
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <div class="brandmark" aria-hidden="true">H</div>
+      <div>
+        <div class="brandname">HEX<span>LO</span></div>
+        <div class="tagline">PLAY • COMPARE DEALS • CONQUER</div>
+      </div>
+    </a>
+
+    <div class="searchwrap">
+      <input class="search" id="search" type="search" placeholder="Search 28 games on HEXLO (e.g., GTA 5, Valorant, Minecraft, PC, Mobile)…" aria-label="Search games">
+    </div>
+
+    <div class="top-controls" aria-label="Display and search indexing controls">
+      <button class="pill-btn seo-btn" type="button" id="openSeoGuideBtn" data-action="open-seo" title="How to publish Hexlo so it appears on Google, Chrome & Microsoft Edge">
+        <span>🌐</span>
+        <span class="mode-text">Go Live &amp; Rank on Google / Edge</span>
+      </button>
+      <button class="pill-btn active-mode" type="button" id="fontModeBtn" data-action="toggle-font" title="Switch Font Preset">
+        <span>Aa</span>
+        <span class="mode-text" id="fontModeLabel">Cyber Font</span>
+      </button>
+      <button class="pill-btn active-mode" type="button" id="motionModeBtn" data-action="cycle-motion" title="Cycle Motion Intensity">
+        <span id="motionIcon">✦</span>
+        <span class="mode-text" id="motionModeLabel">Ultra Motion</span>
+      </button>
+      <button class="pill-btn" type="button" id="replayIntroBtn" data-action="replay-intro" title="Replay HEXLO entrance animation">
+        <span>⟳</span>
+        <span class="mode-text">Intro</span>
+      </button>
+    </div>
+
+    <div class="auth-area" id="authArea"></div>
+  </header>
+
+  <div class="layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar" aria-label="Primary sidebar">
+      <div class="side-label">HEXLO NAVIGATION</div>
+      <a class="nav active" href="#home"><span class="ico">⌂</span>Home Hub</a>
+      <a class="nav" href="#games"><span class="ico">🎮</span>28-Game Catalog</a>
+      <a class="nav" href="#stores"><span class="ico">🛒</span>Official Stores &amp; Deals</a>
+      <a class="nav" href="#streaming"><span class="ico">◉</span>Streaming &amp; Cloud</a>
+      <a class="nav" href="#pc"><span class="ico">▣</span>System Rig</a>
+
+      <div class="sidebox">
+        <div style="font-size:22px">🌐</div>
+        <strong>HEXLO SEARCH READY</strong>
+        <small>SEO, Open Graph &amp; JSON-LD built in. Click "Go Live" in the top bar to index on Google &amp; Edge.</small>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="home">
+      <div class="announce">
+        <div class="announce-left">
+          <span class="pulse"></span>
+          <b>HEXLO UNIVERSAL DEAL ENGINE ONLINE</b>
+          <span>· All 28 PC, Laptop &amp; Mobile games include lowest-price buying tips and official store links.</span>
+        </div>
+        <button class="link-btn" type="button" id="announceSeoBtn" data-action="open-seo">How to find Hexlo on Google &amp; Edge ↗</button>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div>
+          <div class="eyebrow" id="heroEyebrow">HEXLO • PC • LAPTOP • MOBILE GAMING UNIVERSE</div>
+          <h1>ENTER <span>HEXLO</span>.<br>BEST DEALS. ZERO LIMITS.</h1>
+          <p id="heroSubtitle">Your multi-platform gaming portal to discover 28 top PC, Laptop, Android &amp; iOS games, compare where to buy or download for the lowest market price, and sync your gamer profile.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#games">⚡ Explore 28 Games</a>
+            <a class="btn secondary" href="#stores">🛒 Official Stores &amp; Trackers</a>
+          </div>
+        </div>
+
+        <div class="pcbox" id="pc">
+          <div class="pc-head"><b>HEXLO RIG PROFILE</b><span class="online">● MULTI-DEVICE READY</span></div>
+          <h3>PC • LAPTOP • MOBILE</h3>
+          <div class="pcspec">
+            PC / Laptop: Steam · Epic · GOG · Xbox<br>
+            Mobile: Google Play · Apple App Store<br>
+            Deal Check: IsThereAnyDeal · GG.deals<br>
+            Cloud Stream: GeForce NOW · Xbox Cloud
+          </div>
+          <div class="pcbar"><span></span></div>
+          <div style="display:flex;justify-content:space-between;color:#b2a8cf;font-size:10px;margin-top:7px;font-family:var(--font-mono)">
+            <span>28 TITLES INDEXED</span>
+            <span>SAFE OFFICIAL LINKS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Strip -->
+      <section class="statstrip" aria-label="HEXLO metrics">
+        <div class="stat"><small>CATALOG SIZE</small><strong id="totalStat">28</strong><em>PC · LAPTOP · MOBILE</em></div>
+        <div class="stat"><small>OFFICIAL STORES</small><strong>8+</strong><em>VERIFIED LAUNCHERS</em></div>
+        <div class="stat"><small>SEARCH ENGINE</small><strong>SEO</strong><em>GOOGLE &amp; EDGE READY</em></div>
+        <div class="stat"><small>PLATFORM</small><strong>HEXLO</strong><em>GAMING UNIVERSE</em></div>
+      </section>
+
+      <!-- Catalog Section -->
+      <div class="sectionhead">
+        <div>
+          <h2>Explore 28 Games &amp; Best Market Deals</h2>
+          <p>Filter by genre or device, read where to buy for the lowest price on PC, Laptop &amp; Mobile, and click <b>Get / Buy Game</b>.</p>
+        </div>
+        <div class="live">● LIVE DEAL GUIDES ACTIVE</div>
+      </div>
+
+      <div class="toolbar-stack">
+        <div class="toolbar">
+          <div class="filter-group">
+            <span class="filter-label">Genre:</span>
+            <div class="filters">
+              <button class="filter active" type="button" data-filter="all">All Genres</button>
+              <button class="filter" type="button" data-filter="free">Free to Play</button>
+              <button class="filter" type="button" data-filter="action">Action</button>
+              <button class="filter" type="button" data-filter="adventure">Adventure</button>
+              <button class="filter" type="button" data-filter="racing">Racing &amp; Sports</button>
+              <button class="filter" type="button" data-filter="strategy">Strategy &amp; Casual</button>
+            </div>
+          </div>
+          <div class="count" id="count">28 OF 28 GAMES SHOWN</div>
+        </div>
+
+        <div class="toolbar">
+          <div class="filter-group">
+            <span class="filter-label">Device:</span>
+            <div class="filters">
+              <button class="pfilter active" type="button" data-platform="all">All Devices</button>
+              <button class="pfilter" type="button" data-platform="pc">💻 PC &amp; Laptop</button>
+              <button class="pfilter" type="button" data-platform="mobile">📱 Mobile (iOS / Android)</button>
+              <button class="pfilter" type="button" data-platform="cross">🔄 Cross-Platform</button>
+            </div>
+          </div>
+          <div class="extra-tools">
+            <button class="toolbtn" type="button" id="randomGame" data-action="random-game">✦ Random Spotlight</button>
+            <button class="toolbtn" type="button" id="favoritesOnly" data-action="toggle-fav-only">♡ Favourites</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 28-Game Catalog Grid -->
+      <section class="grid" id="games" aria-label="HEXLO Game Catalog"></section>
+
+      <!-- Official Storefronts -->
+      <section class="stores-section" id="stores">
+        <div class="sectionhead">
+          <div>
+            <h2>Official Storefronts &amp; Price Trackers</h2>
+            <p>Always compare official store sales and authorized key sellers before purchasing on PC, Laptop, or Mobile.</p>
+          </div>
+          <div class="live">● 100% SAFE &amp; OFFICIAL</div>
+        </div>
+
+        <div class="store-grid">
+          <div class="store-card">
+            <div class="store-head">
+              <div class="store-title"><span class="store-ico">🎮</span>Steam</div>
+              <span class="store-devices">PC &amp; Laptop</span>
+            </div>
+            <p>Massive seasonal sales (Spring, Summer, Autumn, Winter), cloud saves, and workshop mods.</p>
+            <a class="store-link" href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Open Steam Store ↗</a>
+          </div>
+
+          <div class="store-card">
+            <div class="store-head">
+              <div class="store-title"><span class="store-ico">⚡</span>Epic Games Store</div>
+              <span class="store-devices">PC, Laptop &amp; Mobile</span>
+            </div>
+            <p>Weekly free PC games, Fortnite &amp; Rocket League home, plus Epic Games Mobile app.</p>
+            <a class="store-link" href="https://store.epicgames.com/" target="_blank" rel="noopener noreferrer">Open Epic Games ↗</a>
+          </div>
+
+          <div class="store-card">
+            <div class="store-head">
+              <div class="store-title"><span class="store-ico">🏷️</span>IsThereAnyDeal &amp; GG.deals</div>
+              <span class="store-devices">PC &amp; Laptop Tracker</span>
+            </div>
+            <p>Compare historical lowest prices across Steam, GOG, Fanatical, Green Man Gaming, and Humble.</p>
+            <a class="store-link" href="https://isthereanydeal.com/" target="_blank" rel="noopener noreferrer">Compare PC Deals ↗</a>
+          </div>
+
+          <div class="store-card">
+            <div class="store-head">
+              <div class="store-title"><span class="store-ico">🟩</span>Xbox App / PC Game Pass</div>
+              <span class="store-devices">Windows &amp; Cloud</span>
+            </div>
+            <p>Play Forza Horizon 5, Palworld, Minecraft, and Call of Duty via PC Game Pass or Cloud Gaming.</p>
+            <a class="store-link" href="https://www.xbox.com/xbox-game-pass/pc-game-pass" target="_blank" rel="noopener noreferrer">Explore PC Game Pass ↗</a>
+          </div>
+
+          <div class="store-card">
+            <div class="store-head">
+              <div class="store-title"><span class="store-ico">▶️</span>Google Play &amp; Play Games PC</div>
+              <span class="store-devices">Android, PC &amp; Laptop</span>
+            </div>
+            <p>Official Android store plus native Google Play Games on Windows PCs and laptops.</p>
+            <a class="store-link" href="https://play.google.com/googleplaygames" target="_blank" rel="noopener noreferrer">Google Play Games PC ↗</a>
+          </div>
+
+          <div class="store-card">
+            <div class="store-head">
+              <div class="store-title"><span class="store-ico">🍎</span>Apple App Store</div>
+              <span class="store-devices">iPhone, iPad &amp; Mac</span>
+            </div>
+            <p>Official iOS/iPadOS downloads and Apple Silicon Mac ports with secure Apple ID billing.</p>
+            <a class="store-link" href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">Open App Store ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Streaming & Cloud Section -->
+      <section class="bottomgrid" id="streaming">
+        <div class="panel">
+          <h3>◉ STREAMING &amp; CLOUD GAMING</h3>
+          <div class="streamrow"><span>NVIDIA GeForce NOW</span><span class="status">● Stream PC games on low-end laptops/phones</span></div>
+          <div class="streamrow"><span>Xbox Cloud Gaming</span><span class="status">● Play Fortnite free in browser</span></div>
+          <div class="streamrow"><span>Steam Link Remote Play</span><span class="status">● Stream your PC to phone/tablet</span></div>
+          <div class="streamrow"><span>OBS Studio Capture</span><span class="status">● 1080p60 NVENC Ready</span></div>
+        </div>
+        <div class="panel">
+          <h3>⚡ QUICK LAUNCHERS</h3>
+          <div class="shortcut">
+            <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Steam ↗</a>
+            <a href="https://store.epicgames.com/" target="_blank" rel="noopener noreferrer">Epic Games ↗</a>
+            <a href="https://www.gog.com/" target="_blank" rel="noopener noreferrer">GOG.com ↗</a>
+            <a href="https://isthereanydeal.com/" target="_blank" rel="noopener noreferrer">IsThereAnyDeal ↗</a>
+            <a href="https://play.geforcenow.com/" target="_blank" rel="noopener noreferrer">GeForce NOW ↗</a>
+            <a href="https://www.xbox.com/play" target="_blank" rel="noopener noreferrer">Xbox Cloud ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">
+        HEXLO GAMING UNIVERSE · Multi-platform PC, Laptop &amp; Mobile catalog and lowest-price deal guide. Always verify region locks before activating digital keys.
+      </div>
+    </main>
+  </div>
+
+  <!-- =====================================================================
+       SIGN IN / CREATE ACCOUNT / 2-STEP RECOVERY MODAL
+       ===================================================================== -->
+  <div class="modal-backdrop" id="authModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="authModalHeading">
+    <div class="auth-modal">
+      <button class="modal-close" type="button" id="closeAuthModal" data-action="close-auth-guest" aria-label="Close sign in window">✕</button>
+      <div class="auth-brand">
+        <div class="auth-brand-ico">H</div>
+        <div>
+          <div id="authModalHeading" style="font-family:var(--font-display);font-weight:900;font-size:16px;letter-spacing:.6px">WELCOME TO HEXLO</div>
+          <div style="font-size:11.5px;color:#b8add6">Sign in or create your HEXLO account to unlock deals &amp; sync favourites</div>
+        </div>
+      </div>
+
+      <div class="auth-tabs" id="authTabs">
+        <button class="auth-tab active" type="button" data-auth-tab="login">Sign In</button>
+        <button class="auth-tab" type="button" data-auth-tab="signup">Create Account</button>
+      </div>
+
+      <div class="auth-error" id="authError" role="alert"></div>
+
+      <!-- Sign In Form -->
+      <form class="auth-form active" id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginIdentifier">Email or Gamer Tag</label>
+          <div class="input-wrap">
+            <input class="auth-input" id="loginIdentifier" type="text" autocomplete="username" placeholder="HexloCommander or player@hexlo.gg" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <div class="input-wrap">
+            <input class="auth-input" id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button class="eye-btn" type="button" data-toggle-pass="loginPassword" aria-label="Show password">👁</button>
+          </div>
+        </div>
+        <div class="auth-row">
+          <label class="auth-check"><input type="checkbox" id="rememberMe" checked> Keep me signed in</label>
+          <button class="link-btn" type="button" id="openResetView" data-action="open-reset">Forgot Password</button>
+        </div>
+        <button class="auth-submit" type="submit">Enter HEXLO Universe ↗</button>
+        <button class="demo-btn" type="button" id="demoLoginBtn" data-action="demo-login">⚡ 1-Click Demo Login</button>
+        <button class="guest-preview-btn" type="button" id="continueGuestBtn" data-action="close-auth-guest">Continue as Guest (Preview HEXLO Catalog)</button>
+      </form>
+
+      <!-- Create Account / Sign Up Form -->
+      <form class="auth-form" id="signupForm" novalidate>
+        <div class="field">
+          <label for="signupTag">Gamer Tag</label>
+          <input class="auth-input" id="signupTag" type="text" maxlength="20" placeholder="e.g., HexloLegend" required>
+        </div>
+        <div class="field">
+          <label for="signupEmail">Email Address</label>
+          <input class="auth-input" id="signupEmail" type="email" autocomplete="email" placeholder="you@gmail.com" required>
+        </div>
+        <div class="field">
+          <label for="signupPlatform">Preferred Gaming Device</label>
+          <select class="auth-select" id="signupPlatform">
+            <option value="PC & Laptop">💻 PC &amp; Laptop</option>
+            <option value="Mobile (Android / iOS)">📱 Mobile (Android / iOS)</option>
+            <option value="All Devices (PC + Mobile)">🔄 All Devices (PC + Laptop + Mobile)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="signupPassword">Password <span id="strengthLabel" style="color:#a89ec9">Min 6 chars</span></label>
+          <div class="input-wrap">
+            <input class="auth-input" id="signupPassword" type="password" autocomplete="new-password" placeholder="Create a strong password" required>
+            <button class="eye-btn" type="button" data-toggle-pass="signupPassword" aria-label="Show password">👁</button>
+          </div>
+          <div class="strength-bar"><i id="strengthFill"></i></div>
+          <div class="strength-meta"><span>Mix uppercase, numbers &amp; symbols</span><span id="strengthScore">0/4</span></div>
+        </div>
+        <button class="auth-submit" type="submit">Create HEXLO Account &amp; Enter ✦</button>
+        <button class="guest-preview-btn" type="button" id="continueGuestBtn2" data-action="close-auth-guest">Continue as Guest (Preview HEXLO Catalog)</button>
+      </form>
+
+      <!-- 2-Step Password Recovery Form -->
+      <form class="auth-form" id="resetForm" novalidate>
+        <div class="recovery-step active" id="recoveryStep1">
+          <div style="font-size:12px;color:#d0c6e8;line-height:1.5">
+            Enter your registered email or Gamer Tag to generate a 6-digit HEXLO verification code and open a pre-filled reset email in your mail app.
+          </div>
+          <div class="field">
+            <label for="resetIdentifier">
+              <span>Registered Email or Gamer Tag</span>
+              <button class="link-btn" type="button" id="quickFillRecovery" data-action="quick-fill-recovery">Use Demo Email</button>
+            </label>
+            <input class="auth-input" id="resetIdentifier" type="text" placeholder="player@hexlo.gg or HexloCommander" required>
+          </div>
+          <button class="auth-submit" type="button" id="sendRecoveryCodeBtn" data-action="send-recovery">Generate 6-Digit Reset Code ✉</button>
+        </div>
+
+        <div class="recovery-step" id="recoveryStep2">
+          <div class="dispatch-banner">
+            <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:10px;color:#67e8f9;font-weight:700">
+              <span>✉ RESET CODE READY</span>
+              <span id="recoveryTimer" style="color:#6ee7b7">10:00</span>
+            </div>
+            <div style="font-size:11px;color:#cbd5e1;margin-top:4px">Account: <b id="recoveryTargetEmail" style="color:#fff">player@hexlo.gg</b></div>
+            <div class="dispatch-code-row">
+              <span class="dispatch-code" id="generatedOtpDisplay">000000</span>
+              <button class="copy-code-btn" type="button" id="copyOtpBtn" data-action="copy-otp">Copy &amp; Fill</button>
+            </div>
+            <a class="mailto-btn" id="mailtoResetLink" href="#">✉ Send Copy to My Email App ↗</a>
+          </div>
+
+          <div class="field">
+            <label for="resetOtpInput">Enter 6-Digit Verification Code</label>
+            <input class="auth-input" id="resetOtpInput" type="text" inputmode="numeric" maxlength="6" placeholder="123456" style="font-family:var(--font-mono);font-size:16px;text-align:center;letter-spacing:4px" required>
+          </div>
+          <div class="field">
+            <label for="resetNewPassword">New HEXLO Password</label>
+            <input class="auth-input" id="resetNewPassword" type="password" placeholder="Create new password (min 6 chars)" required>
+          </div>
+          <button class="auth-submit" type="submit">Verify &amp; Update Password ✓</button>
+        </div>
+
+        <div class="provider-box">
+          <div style="font-family:var(--font-hud);font-size:12px;font-weight:700;color:#e9d5ff">🔐 Changing your actual Email Inbox password?</div>
+          <div style="font-size:11px;color:#b2a8cf;margin-top:2px">Use your email provider's official security settings:</div>
+          <div class="provider-pills">
+            <a class="provider-pill" href="https://myaccount.google.com/signinoptions/password" target="_blank" rel="noopener noreferrer"><span>Google / Gmail</span><span>↗</span></a>
+            <a class="provider-pill" href="https://account.microsoft.com/security" target="_blank" rel="noopener noreferrer"><span>Microsoft / Edge</span><span>↗</span></a>
+            <a class="provider-pill" href="https://iforgot.apple.com/" target="_blank" rel="noopener noreferrer"><span>Apple ID / iCloud</span><span>↗</span></a>
+            <a class="provider-pill" href="https://login.yahoo.com/account/security" target="_blank" rel="noopener noreferrer"><span>Yahoo Mail</span><span>↗</span></a>
+          </div>
+        </div>
+
+        <div style="text-align:center">
+          <button class="link-btn" type="button" id="backToLoginBtn" data-action="back-to-login">← Back to Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       PER-GAME BUY & DOWNLOAD DEAL HUB MODAL
+       ===================================================================== -->
+  <div class="modal-backdrop" id="gameModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-hero">
+        <div class="modal-hero-art" id="modalHeroArt"></div>
+        <button class="modal-close" type="button" id="closeModal" data-action="close-game-modal" aria-label="Close game modal">✕</button>
+        <div class="modal-hero-content">
+          <div class="modal-badges" id="modalBadges"></div>
+          <h3 class="modal-title" id="modalTitle">Game Title</h3>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc" id="modalDesc"></p>
+        <div>
+          <div class="modal-sec-title">💻 Buy &amp; Download on PC &amp; Laptop (Lowest Price Options)</div>
+          <div class="modal-links" id="modalPcLinks"></div>
+        </div>
+        <div>
+          <div class="modal-sec-title">📱 Download / Play on Mobile (Android &amp; iOS)</div>
+          <div class="modal-links" id="modalMobileLinks"></div>
+        </div>
+        <div class="modal-steps">
+          <div class="m-step-box">
+            <h5>💻 PC &amp; Laptop Best-Deal Tips</h5>
+            <ol id="modalPcSteps"></ol>
+          </div>
+          <div class="m-step-box">
+            <h5>📱 Mobile &amp; Cloud Setup Tips</h5>
+            <ol id="modalMobileSteps"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       GO LIVE & RANK ON GOOGLE / CHROME / MICROSOFT EDGE GUIDE MODAL
+       ===================================================================== -->
+  <div class="modal-backdrop" id="seoModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="seoModalTitle">
+    <div class="auth-modal" style="width:min(640px,100%)">
+      <button class="modal-close" type="button" id="closeSeoModal" data-action="close-seo" aria-label="Close search indexing guide">✕</button>
+      <div class="auth-brand">
+        <div class="auth-brand-ico">🌐</div>
+        <div>
+          <div id="seoModalTitle" style="font-family:var(--font-display);font-weight:900;font-size:16px">HOW TO MAKE "HEXLO" APPEAR ON GOOGLE, CHROME &amp; EDGE</div>
+          <div style="font-size:11.5px;color:#b8add6">Your HTML file already includes full SEO, Open Graph &amp; Schema.org metadata for Hexlo</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="seo-step">
+          <h4>STEP 1 — Host This File Online (Free &amp; Instant)</h4>
+          <p>Local files on your computer (<code>file://</code>) cannot be crawled by search engines. Upload this HTML file renamed as <code>index.html</code> to a free static host like <b>Netlify Drop</b>, <b>Vercel</b>, or <b>GitHub Pages</b> (and optionally connect a custom domain like <code>hexlo.gg</code> or <code>hexlo.app</code>).</p>
+          <div class="seo-links-row">
+            <a class="seo-ext-link" href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer">Netlify Drop (Drag &amp; Drop) ↗</a>
+            <a class="seo-ext-link" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages ↗</a>
+            <a class="seo-ext-link" href="https://vercel.com/new" target="_blank" rel="noopener noreferrer">Vercel Deploy ↗</a>
+          </div>
+        </div>
+
+        <div class="seo-step">
+          <h4>STEP 2 — Submit Your Live URL to Google Search Console (Powers Google &amp; Chrome)</h4>
+          <p>Once you have your live <code>https://</code> link, open <b>Google Search Console</b>, add your URL property, and click <b>Request Indexing</b> so Google &amp; Chrome list <b>HEXLO</b> when users search "Hexlo".</p>
+          <div class="seo-links-row">
+            <a class="seo-ext-link" href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Open Google Search Console ↗</a>
+          </div>
+        </div>
+
+        <div class="seo-step">
+          <h4>STEP 3 — Submit Your Live URL to Bing Webmaster Tools (Powers Microsoft Edge)</h4>
+          <p>Microsoft Edge uses Bing's search index. Sign in to <b>Bing Webmaster Tools</b> (you can even import directly from Google Search Console in 1 click) and submit your URL so searching <b>"Hexlo"</b> in Microsoft Edge displays your website.</p>
+          <div class="seo-links-row">
+            <a class="seo-ext-link" href="https://www.bing.com/webmasters/about" target="_blank" rel="noopener noreferrer">Open Bing Webmaster Tools ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Authentication Success Celebration & Warp-In Overlay -->
+  <div id="authSuccessOverlay" role="status" aria-live="polite" aria-label="Authentication success">
+    <canvas id="authBurstCanvas" aria-hidden="true"></canvas>
+    <div class="auth-shockwave ring-1" aria-hidden="true"></div>
+    <div class="auth-shockwave ring-2" aria-hidden="true"></div>
+    <div class="auth-laser-sweep" aria-hidden="true"></div>
+
+    <div class="auth-warp-card">
+      <span class="hud-corner tl" aria-hidden="true"></span>
+      <span class="hud-corner tr" aria-hidden="true"></span>
+      <span class="hud-corner bl" aria-hidden="true"></span>
+      <span class="hud-corner br" aria-hidden="true"></span>
+
+      <div class="auth-status-chip" id="authStatusChip">● ACCESS GRANTED // WELCOME BACK</div>
+
+      <div class="auth-emblem-stack">
+        <div class="auth-orbit-ring" aria-hidden="true"></div>
+        <div class="auth-warp-avatar" id="authWarpAvatar">HX</div>
+        <div class="auth-check-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polyline points="5 13 10 18 19 7"></polyline></svg>
+        </div>
+      </div>
+
+      <h3 class="auth-warp-title" id="authWarpTitle">WELCOME, HEXLOCOMMANDER</h3>
+      <p class="auth-warp-sub" id="authWarpSub">Syncing saved favourites, device filters &amp; lowest-price PC, Laptop &amp; Mobile deals…</p>
+      <div class="auth-warp-bar" aria-hidden="true"><i></i></div>
+      <button class="auth-warp-skip" type="button" id="skipAuthAnimBtn" data-action="dismiss-auth-anim">Launch Dashboard Now →</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // =====================================================================
+      // 1. SAFE STORAGE & PURE-JS SHA-256 FALLBACK (NO SANDBOX CRASHES)
+      // =====================================================================
+      const memStore = new Map();
+
+      function safeGet(store, key) {
+        try {
+          if (store && typeof store.getItem === 'function') return store.getItem(key);
+        } catch (e) {}
+        return memStore.has(key) ? memStore.get(key) : null;
+      }
+
+      function safeSet(store, key, val) {
+        const s = String(val);
+        memStore.set(key, s);
+        try {
+          if (store && typeof store.setItem === 'function') store.setItem(key, s);
+        } catch (e) {}
+      }
+
+      function safeRemove(store, key) {
+        memStore.delete(key);
+        try {
+          if (store && typeof store.removeItem === 'function') store.removeItem(key);
+        } catch (e) {}
+      }
+
+      // Pure-JS SHA-256 fallback so hashing works even on non-HTTPS or file://
+      function pureJsSha256(ascii) {
+        function rightRotate(value, amount) {
+          return (value >>> amount) | (value << (32 - amount));
+        }
+        const mathPow = Math.pow;
+        const maxWord = mathPow(2, 32);
+        let result = '';
+        const words = [];
+        const asciiBitLength = ascii.length * 8;
+        let hash = pureJsSha256.h = pureJsSha256.h || [];
+        const k = pureJsSha256.k = pureJsSha256.k || [];
+        let primeCounter = k.length;
+        const isComposite = {};
+
+        for (let candidate = 2; primeCounter < 64; candidate++) {
+          if (!isComposite[candidate]) {
+            for (let i = 0; i < 313; i += candidate) isComposite[i] = candidate;
+            hash[primeCounter] = (mathPow(candidate, 0.5) * maxWord) | 0;
+            k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+          }
+        }
+
+        let str = ascii + '\x80';
+        while (str.length % 64 - 56) str += '\x00';
+        for (let i = 0; i < str.length; i++) {
+          const j = str.charCodeAt(i);
+          if (j >> 8) return 'HEXLO_ENC_' + btoa(unescape(encodeURIComponent(ascii)));
+          words[i >> 2] |= j << ((3 - i) % 4) * 8;
+        }
+        words[words.length] = (asciiBitLength / maxWord) | 0;
+        words[words.length] = asciiBitLength;
+
+        for (let j = 0; j < words.length;) {
+          const w = words.slice(j, j += 16);
+          const oldHash = hash.slice(0, 8);
+          for (let i = 0; i < 64; i++) {
+            const w15 = w[i - 15], w2 = w[i - 2];
+            const a = hash[0], e = hash[4];
+            const temp1 = hash[7] +
+              (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) +
+              ((e & hash[5]) ^ ((~e) & hash[6])) +
+              k[i] +
+              (w[i] = (i < 16) ? w[i] : (
+                w[i - 16] +
+                (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3)) +
+                w[i - 7] +
+                (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10))
+              ) | 0);
+            const temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) +
+              ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
+            hash = [(temp1 + temp2) | 0].concat(hash);
+            hash[4] = (hash[4] + temp1) | 0;
+            hash.pop();
+          }
+          for (let i = 0; i < 8; i++) hash[i] = (hash[i] + oldHash[i]) | 0;
+        }
+
+        for (let i = 0; i < 8; i++) {
+          for (let j = 3; j + 1; j--) {
+            const b = (hash[i] >> (j * 8)) & 255;
+            result += ((b < 16) ? 0 : '') + b.toString(16);
+          }
+        }
+        return result;
+      }
+
+      async function hashPassword(password) {
+        const salted = 'HEXLO_SALT_' + String(password);
+        try {
+          if (window.crypto && window.crypto.subtle && window.isSecureContext) {
+            const buf = await window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(salted));
+            return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+          }
+        } catch (e) {}
+        return pureJsSha256(salted);
+      }
+
+      const toastEl = document.getElementById('toast');
+      let toastTimer = null;
+      function showToast(msg) {
+        if (!toastEl) return;
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2800);
+      }
+
+      // =====================================================================
+      // 2. FONT MODE & MOTION MODE
+      // =====================================================================
+      const FONT_KEY = 'hexlo_font_mode_v1';
+      const MOTION_KEY = 'hexlo_motion_mode_v1';
+
+      const systemReduced = Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      let fontMode = safeGet(window.localStorage, FONT_KEY) === 'clean' ? 'clean' : 'cyber';
+      const savedMotion = safeGet(window.localStorage, MOTION_KEY);
+      let motionMode = ['ultra', 'balanced', 'reduced'].includes(savedMotion) ? savedMotion : (systemReduced ? 'reduced' : 'ultra');
+
+      const fontModeBtn = document.getElementById('fontModeBtn');
+      const fontModeLabel = document.getElementById('fontModeLabel');
+      const motionModeBtn = document.getElementById('motionModeBtn');
+      const motionModeLabel = document.getElementById('motionModeLabel');
+      const motionIcon = document.getElementById('motionIcon');
+
+      function applyDisplayModes(notify) {
+        document.documentElement.setAttribute('data-style-mode', fontMode);
+        document.documentElement.setAttribute('data-motion-mode', motionMode);
+        if (fontModeLabel) fontModeLabel.textContent = fontMode === 'cyber' ? 'Cyber Font' : 'Clean Pro';
+        if (fontModeBtn) fontModeBtn.classList.toggle('active-mode', fontMode === 'cyber');
+
+        const map = {
+          ultra: { label: 'Ultra Motion', icon: '✦', active: true },
+          balanced: { label: 'Balanced', icon: '◈', active: true },
+          reduced: { label: 'Reduced Motion', icon: '◌', active: false }
+        };
+        const cfg = map[motionMode] || map.ultra;
+        if (motionModeLabel) motionModeLabel.textContent = cfg.label;
+        if (motionIcon) motionIcon.textContent = cfg.icon;
+        if (motionModeBtn) motionModeBtn.classList.toggle('active-mode', cfg.active);
+
+        if (notify) showToast(`Display: ${fontMode === 'cyber' ? 'Cyber Font' : 'Clean Pro'} · ${cfg.label}`);
+      }
+
+      function toggleFontMode() {
+        fontMode = fontMode === 'cyber' ? 'clean' : 'cyber';
+        safeSet(window.localStorage, FONT_KEY, fontMode);
+        applyDisplayModes(true);
+      }
+
+      function cycleMotionMode() {
+        const order = ['ultra', 'balanced', 'reduced'];
+        motionMode = order[(order.indexOf(motionMode) + 1) % order.length];
+        safeSet(window.localStorage, MOTION_KEY, motionMode);
+        applyDisplayModes(true);
+      }
+
+      applyDisplayModes(false);
+
+      // =====================================================================
+      // 3. PROCEDURAL SVG ARTWORK GENERATOR & COMPLETE 28-GAME CATALOG
+      // =====================================================================
+      function buildProceduralSvgBanner(game, idx) {
+        const glyphs = ['⚔', '◈', '⚡', '★', '❖', '▲', '◉', '✦'];
+        const emblem = glyphs[idx % glyphs.length];
+        const angle = (idx * 37) % 360;
+        const cx = 65 + (idx % 4) * 7;
+        const cy = 28 + (idx % 3) * 10;
+        return `
+          <svg class="svg-banner" viewBox="0 0 600 260" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="bg_${idx}" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(${angle})">
+                <stop offset="0%" stop-color="${game.c1}"/>
+                <stop offset="55%" stop-color="${game.c2}"/>
+                <stop offset="100%" stop-color="#070512"/>
+              </linearGradient>
+              <radialGradient id="orb_${idx}" cx="${cx}%" cy="${cy}%" r="55%">
+                <stop offset="0%" stop-color="${game.c3 || '#67e8f9'}" stop-opacity="0.7"/>
+                <stop offset="100%" stop-color="${game.c1}" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="600" height="260" fill="url(#bg_${idx})"/>
+            <rect width="600" height="260" fill="url(#orb_${idx})"/>
+            <g stroke="rgba(255,255,255,0.12)" stroke-width="1.2" fill="none">
+              <polygon points="460,25 535,68 535,154 460,197 385,154 385,68"/>
+              <polygon points="460,48 515,80 515,142 460,174 405,142 405,80" stroke="rgba(103,232,249,0.28)"/>
+              <line x1="0" y1="210" x2="600" y2="135"/>
+              <line x1="120" y1="0" x2="340" y2="260"/>
+            </g>
+            <text x="460" y="128" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="54" font-weight="900" fill="rgba(255,255,255,0.24)">${emblem}</text>
+          </svg>
+        `;
+      }
+
+      const GAMES = [
+        {
+          name: "Call of Duty: Warzone",
+          searchKeys: "COD Warzone Battle Royale Shooter",
+          genres: ["free", "action"],
+          platforms: ["pc", "mobile"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Battle Royale",
+          fpsBadge: "PC · LAPTOP · MOBILE",
+          c1: "#2563eb", c2: "#1e1b4b", c3: "#38bdf8",
+          desc: "Fast-paced free-to-play battle royale and extraction shooter across large combat maps and seasonal playlists.",
+          pcDeal: "100% Free on Battle.net, Steam & PC Game Pass (check IsThereAnyDeal/GG.deals for vault bundle promos).",
+          mobileDeal: "Play Call of Duty: Mobile free on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Laptop", "📱 COD Mobile"],
+          storeChips: ["Battle.net", "Steam", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Battle.net Official Launcher", sub: "Free Windows PC & Laptop Client", tag: "FREE", url: "https://www.callofduty.com/warzone" },
+            { store: "Steam Store", sub: "Free PC & Laptop Download", tag: "FREE", url: "https://store.steampowered.com/app/1962663/Call_of_Duty_Warzone/" }
+          ],
+          mobileLinks: [
+            { store: "Google Play (COD: Mobile)", sub: "Free Android Download", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" },
+            { store: "Apple App Store (COD: Mobile)", sub: "Free iOS Download", tag: "iOS", url: "https://apps.apple.com/app/call-of-duty-mobile/id1287282214" }
+          ],
+          pcSteps: ["Download free on Battle.net or Steam and install to an SSD.", "Enable DLSS/FSR for smooth laptop frame rates."],
+          mobileSteps: ["Install Call of Duty: Mobile free from Google Play or Apple App Store."]
+        },
+        {
+          name: "Fortnite",
+          searchKeys: "Fortnite Battle Royale Zero Build Epic",
+          genres: ["free", "action"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Battle Royale",
+          fpsBadge: "PC · LAPTOP · MOBILE",
+          c1: "#4f46e5", c2: "#311042", c3: "#e879f9",
+          desc: "Free-to-play battle royale, Zero Build, Lego & racing modes with constant seasonal updates and cross-play.",
+          pcDeal: "100% Free on Epic Games Store; watch seasonal V-Bucks starter packs for best value.",
+          mobileDeal: "Free via Epic Games Mobile App or free in-browser on iPhone/Android via Xbox Cloud Gaming.",
+          platTags: ["💻 PC / Laptop", "📱 Mobile", "🔄 Cross-Play"],
+          storeChips: ["Epic Games", "Xbox Cloud", "GeForce NOW"],
+          pcLinks: [
+            { store: "Epic Games Launcher", sub: "Official PC & Laptop Download", tag: "FREE", url: "https://www.fortnite.com/download" },
+            { store: "Xbox Cloud Gaming (Browser)", sub: "Play Free on Any Laptop/Mac", tag: "CLOUD", url: "https://www.xbox.com/play/games/fortnite/BT5P2X999VH2" }
+          ],
+          mobileLinks: [
+            { store: "Epic Games Mobile Store", sub: "Official Mobile App", tag: "MOBILE", url: "https://store.epicgames.com/en-US/mobile" },
+            { store: "Xbox Cloud Gaming", sub: "Free Browser Play on iOS & Android", tag: "FREE CLOUD", url: "https://www.xbox.com/play/games/fortnite/BT5P2X999VH2" }
+          ],
+          pcSteps: ["Install Epic Games Launcher and download Fortnite free.", "Use Performance Mode on thin laptops for higher FPS."],
+          mobileSteps: ["Launch via Epic Games Mobile or stream free in your phone browser via Xbox Cloud Gaming."]
+        },
+        {
+          name: "VALORANT",
+          searchKeys: "Valorant Riot Tactical FPS Shooter",
+          genres: ["free", "action"],
+          platforms: ["pc"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Tactical FPS",
+          fpsBadge: "PC · LAPTOP · 144+ FPS",
+          c1: "#e11d48", c2: "#1e1b4b", c3: "#fda4af",
+          desc: "Competitive 5v5 character-based tactical shooter blending precise gunplay with unique agent abilities.",
+          pcDeal: "100% Free on Riot Client & Epic Games; wait for Night Market discounts if buying weapon skins.",
+          mobileDeal: "No official full mobile port of PC VALORANT; use Riot Mobile companion app for stats & store.",
+          platTags: ["💻 PC / Laptop"],
+          storeChips: ["Riot Client", "Epic Games"],
+          pcLinks: [
+            { store: "PlayValorant.com (Riot Client)", sub: "Official Direct Download", tag: "FREE", url: "https://playvalorant.com/" },
+            { store: "Epic Games Store", sub: "Free PC & Laptop Client", tag: "FREE", url: "https://store.epicgames.com/en-US/p/valorant" }
+          ],
+          mobileLinks: [
+            { store: "Riot Mobile (Android)", sub: "Official Companion App", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect" },
+            { store: "Riot Mobile (iOS)", sub: "Official Companion App", tag: "iOS", url: "https://apps.apple.com/app/riot-mobile/id1528340014" }
+          ],
+          pcSteps: ["Download free at playvalorant.com—runs smoothly even on budget laptops."],
+          mobileSteps: ["Use Riot Mobile on your phone to track match history and Night Market offers."]
+        },
+        {
+          name: "Counter-Strike 2",
+          searchKeys: "CS2 Counter Strike 2 Valve Steam",
+          genres: ["free", "action"],
+          platforms: ["pc"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Tactical FPS",
+          fpsBadge: "PC · LAPTOP · STEAM",
+          c1: "#d97706", c2: "#1f2937", c3: "#fde047",
+          desc: "Classic round-based tactical FPS built on Source 2 with dynamic smokes, map control, and competitive ranks.",
+          pcDeal: "Free on Steam; Prime Status Upgrade is a one-time purchase directly on Steam.",
+          mobileDeal: "No official mobile port; install Steam Guard Mobile for account 2FA security.",
+          platTags: ["💻 PC / Laptop"],
+          storeChips: ["Steam"],
+          pcLinks: [
+            { store: "Steam Store (Official)", sub: "Free Download · PC & Laptop", tag: "FREE", url: "https://store.steampowered.com/app/730/CounterStrike_2/" }
+          ],
+          mobileLinks: [
+            { store: "Steam Mobile Authenticator", sub: "Account Security & Market", tag: "COMPANION", url: "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community" }
+          ],
+          pcSteps: ["Install Steam and download Counter-Strike 2 free."],
+          mobileSteps: ["Enable Steam Guard Mobile Authenticator on your phone."]
+        },
+        {
+          name: "Apex Legends",
+          searchKeys: "Apex Legends Respawn EA Battle Royale",
+          genres: ["free", "action"],
+          platforms: ["pc"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Hero BR",
+          fpsBadge: "PC · LAPTOP · CLOUD",
+          c1: "#dc2626", c2: "#172554", c3: "#f97316",
+          desc: "Fast-paced squad hero battle royale featuring fluid movement, legend abilities, and high-skill gunfights.",
+          pcDeal: "100% Free on Steam, EA App & Epic Games Store.",
+          mobileDeal: "Stream the PC version on mobile or thin laptops via NVIDIA GeForce NOW.",
+          platTags: ["💻 PC / Laptop", "☁️ GeForce NOW"],
+          storeChips: ["Steam", "EA App", "Epic Games"],
+          pcLinks: [
+            { store: "Steam Store", sub: "Free PC & Laptop Download", tag: "FREE", url: "https://store.steampowered.com/app/1172470/Apex_Legends/" },
+            { store: "EA App Official", sub: "Free Windows Client", tag: "FREE", url: "https://www.ea.com/games/apex-legends" }
+          ],
+          mobileLinks: [
+            { store: "NVIDIA GeForce NOW", sub: "Cloud Stream on Mobile/Laptop", tag: "CLOUD", url: "https://play.geforcenow.com/" }
+          ],
+          pcSteps: ["Download free on Steam or EA App and link your EA account."],
+          mobileSteps: ["Play via GeForce NOW cloud streaming on supported phones/tablets."]
+        },
+        {
+          name: "PUBG: BATTLEGROUNDS & PUBG MOBILE",
+          searchKeys: "PUBG Battlegrounds Mobile BGMI Shooter",
+          genres: ["free", "action"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Survival BR",
+          fpsBadge: "PC · LAPTOP · ANDROID · iOS",
+          c1: "#ca8a04", c2: "#18181b", c3: "#fef08a",
+          desc: "100-player tactical survival battle royale on PC/laptop and streamlined mobile battle royale on phones.",
+          pcDeal: "Free base game on Steam & Epic Games Store.",
+          mobileDeal: "Free on Google Play & Apple App Store; buy UC only via official in-game promos.",
+          platTags: ["💻 PC / Laptop", "📱 Android & iOS"],
+          storeChips: ["Steam", "Epic Games", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Steam (PUBG PC)", sub: "Free PC & Laptop Edition", tag: "FREE PC", url: "https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" },
+            { store: "Epic Games Store", sub: "Free Windows Download", tag: "FREE PC", url: "https://store.epicgames.com/en-US/p/pubg-battlegrounds" }
+          ],
+          mobileLinks: [
+            { store: "Google Play (PUBG MOBILE)", sub: "Official Android Version", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.tencent.ig" },
+            { store: "Apple App Store (PUBG MOBILE)", sub: "Official iOS Version", tag: "iOS", url: "https://apps.apple.com/app/pubg-mobile/id1330123889" }
+          ],
+          pcSteps: ["Download free on Steam or Epic Games."],
+          mobileSteps: ["Install free from Google Play or Apple App Store."]
+        },
+        {
+          name: "Free Fire MAX",
+          searchKeys: "Free Fire MAX Garena Battle Royale Mobile",
+          genres: ["free", "action"],
+          platforms: ["mobile", "pc"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Mobile BR",
+          fpsBadge: "ANDROID · iOS · PLAY GAMES PC",
+          c1: "#ea580c", c2: "#1e1b4b", c3: "#fdba74",
+          desc: "Enhanced-graphics mobile battle royale built for quick 10-minute matches and squad clashes.",
+          pcDeal: "Play natively on Windows PC/Laptop via Google Play Games for PC.",
+          mobileDeal: "100% Free on Google Play & Apple App Store.",
+          platTags: ["📱 Android & iOS", "💻 PC Play Games"],
+          storeChips: ["Play Store", "App Store", "Google Play PC"],
+          pcLinks: [
+            { store: "Google Play Games for PC", sub: "Official Windows PC/Laptop App", tag: "PC / LAPTOP", url: "https://play.google.com/googleplaygames" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Official Free Fire MAX Android", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.dts.freefiremax" },
+            { store: "Apple App Store", sub: "Official Free Fire iOS", tag: "iOS", url: "https://apps.apple.com/app/free-fire/id1300146617" }
+          ],
+          pcSteps: ["Install Google Play Games on Windows to play on laptop/PC."],
+          mobileSteps: ["Download free from Google Play or Apple App Store."]
+        },
+        {
+          name: "GTA 5 (Grand Theft Auto V)",
+          searchKeys: "GTA 5 Grand Theft Auto V Rockstar Online",
+          genres: ["action", "adventure"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · DEEP SALES",
+          badge: "Open World",
+          fpsBadge: "PC · LAPTOP · STORY + ONLINE",
+          c1: "#16a34a", c2: "#0f172a", c3: "#86efac",
+          desc: "Iconic open-world crime adventure in Los Santos featuring a 3-protagonist campaign plus GTA Online.",
+          pcDeal: "Compare Steam, Epic Games & Rockstar Launcher sales via IsThereAnyDeal & GG.deals (often 50–65% off).",
+          mobileDeal: "No native mobile port; stream from your PC to phone/tablet with Steam Link.",
+          platTags: ["💻 PC / Laptop"],
+          storeChips: ["Steam", "Epic Games", "Rockstar", "IsThereAnyDeal"],
+          pcLinks: [
+            { store: "Steam Store (GTA V)", sub: "PC & Laptop · Story + Online", tag: "BUY PC", url: "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" },
+            { store: "Epic Games Store", sub: "Windows PC & Laptop", tag: "BUY PC", url: "https://store.epicgames.com/en-US/p/grand-theft-auto-v" },
+            { store: "IsThereAnyDeal Price Check", sub: "Compare Lowest Authorized Prices", tag: "DEAL CHECK", url: "https://isthereanydeal.com/game/grandtheftautov/info/" }
+          ],
+          mobileLinks: [
+            { store: "Steam Link Mobile", sub: "Stream from PC to Phone/Tablet", tag: "REMOTE PLAY", url: "https://store.steampowered.com/app/353380/Steam_Link/" }
+          ],
+          pcSteps: ["Check IsThereAnyDeal / GG.deals before buying to grab 50%+ seasonal discounts."],
+          mobileSteps: ["Stream from your home PC to mobile over Wi-Fi via Steam Link."]
+        },
+        {
+          name: "Red Dead Redemption 2",
+          searchKeys: "RDR2 Red Dead Redemption 2 Rockstar Western",
+          genres: ["adventure", "action"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · UP TO 67% OFF",
+          badge: "Open World",
+          fpsBadge: "PC · LAPTOP · STORY + ONLINE",
+          c1: "#b91c1c", c2: "#271019", c3: "#fca5a5",
+          desc: "Epic open-world Western story following Arthur Morgan across the American frontier with Red Dead Online.",
+          pcDeal: "Frequently drops up to 67% off on Steam, Epic Games & authorized retailers (Green Man Gaming / Fanatical).",
+          mobileDeal: "No official mobile port; use RDR2 Companion App on mobile for live map & journal.",
+          platTags: ["💻 PC / Laptop"],
+          storeChips: ["Steam", "Epic Games", "IsThereAnyDeal"],
+          pcLinks: [
+            { store: "Steam Store", sub: "Includes Story & Red Dead Online", tag: "BUY PC", url: "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" },
+            { store: "Epic Games Store", sub: "Windows PC & Laptop", tag: "BUY PC", url: "https://store.epicgames.com/en-US/p/red-dead-redemption-2" },
+            { store: "IsThereAnyDeal Price Check", sub: "Compare Lowest Authorized Deals", tag: "DEAL CHECK", url: "https://isthereanydeal.com/game/reddeadredemptionii/info/" }
+          ],
+          mobileLinks: [
+            { store: "RDR2 Companion App", sub: "Second-Screen Map & Journal", tag: "COMPANION", url: "https://www.rockstargames.com/reddeadredemption2/features/companionapp" }
+          ],
+          pcSteps: ["Compare Steam, Epic, and authorized key sellers on IsThereAnyDeal before checkout."],
+          mobileSteps: ["Install the official RDR2 Companion App on iOS/Android."]
+        },
+        {
+          name: "Stray",
+          searchKeys: "Stray Cat Cyberpunk Annapurna",
+          genres: ["adventure"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · SALE DEALS",
+          badge: "Adventure",
+          fpsBadge: "PC · MAC · LAPTOP",
+          c1: "#ea580c", c2: "#3b0764", c3: "#fde047",
+          desc: "Third-person cyberpunk cat adventure where you solve puzzles, evade Zurks, and explore a neon walled city.",
+          pcDeal: "Best prices appear during Steam & Mac App Store seasonal sales or Fanatical/Green Man Gaming bundles.",
+          mobileDeal: "No native mobile build; stream to iPad/phone via Steam Link.",
+          platTags: ["💻 PC / Mac Laptop"],
+          storeChips: ["Steam", "Mac App Store"],
+          pcLinks: [
+            { store: "Steam Store (Windows)", sub: "PC & Laptop Download", tag: "BUY PC", url: "https://store.steampowered.com/app/1332010/Stray/" },
+            { store: "Mac App Store", sub: "Apple Silicon MacBook Version", tag: "MAC", url: "https://apps.apple.com/app/stray/id6451493944" }
+          ],
+          mobileLinks: [
+            { store: "Steam Link Mobile", sub: "Remote Play on iPad/Phone", tag: "STREAM", url: "https://store.steampowered.com/app/353380/Steam_Link/" }
+          ],
+          pcSteps: ["Check Steam seasonal sales or Mac App Store for Apple Silicon MacBooks."],
+          mobileSteps: ["Stream from your PC to iPad or Android via Steam Link."]
+        },
+        {
+          name: "Cyberpunk 2077",
+          searchKeys: "Cyberpunk 2077 Phantom Liberty RPG",
+          genres: ["action", "adventure"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · 50%+ OFF SALES",
+          badge: "Action RPG",
+          fpsBadge: "PC · LAPTOP · RAY TRACING",
+          c1: "#eab308", c2: "#0e7490", c3: "#fef08a",
+          desc: "Open-world sci-fi RPG in Night City with deep cyberware builds, branching story choices, and Phantom Liberty.",
+          pcDeal: "Regularly 50%+ off on GOG.com (DRM-free), Steam & Epic Games during major sales.",
+          mobileDeal: "Stream on supported phones/tablets via NVIDIA GeForce NOW.",
+          platTags: ["💻 PC / Laptop", "☁️ GeForce NOW"],
+          storeChips: ["GOG.com", "Steam", "Epic Games"],
+          pcLinks: [
+            { store: "GOG.com (DRM-Free)", sub: "100% DRM-Free Official Copy", tag: "DRM-FREE", url: "https://www.gog.com/en/game/cyberpunk_2077" },
+            { store: "Steam Store", sub: "PC & Laptop · Cloud Saves", tag: "BUY PC", url: "https://store.steampowered.com/app/1091500/Cyberpunk_2077/" },
+            { store: "Epic Games Store", sub: "Windows PC Edition", tag: "BUY PC", url: "https://store.epicgames.com/en-US/p/cyberpunk-2077" }
+          ],
+          mobileLinks: [
+            { store: "NVIDIA GeForce NOW", sub: "Cloud Stream on Mobile/Laptop", tag: "CLOUD", url: "https://play.geforcenow.com/" }
+          ],
+          pcSteps: ["Compare GOG.com and Steam sales; enable DLSS/FSR for smooth laptop performance."],
+          mobileSteps: ["Link your GOG/Steam/Epic copy to GeForce NOW to stream on mobile."]
+        },
+        {
+          name: "Elden Ring",
+          searchKeys: "Elden Ring Shadow of the Erdtree RPG",
+          genres: ["action", "adventure"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · KEY DEALS",
+          badge: "Action RPG",
+          fpsBadge: "PC · LAPTOP · GOTY",
+          c1: "#b45309", c2: "#0f172a", c3: "#fcd34d",
+          desc: "Critically acclaimed dark-fantasy open-world action RPG featuring massive boss battles and build freedom.",
+          pcDeal: "Compare Steam sales and authorized key retailers (Gamesplanet, Green Man Gaming, Fanatical) via GG.deals.",
+          mobileDeal: "No official mobile port; stream from PC to phone/tablet using Steam Link.",
+          platTags: ["💻 PC / Laptop"],
+          storeChips: ["Steam", "IsThereAnyDeal"],
+          pcLinks: [
+            { store: "Steam Store", sub: "Standard & Shadow of the Erdtree", tag: "BUY PC", url: "https://store.steampowered.com/app/1245620/ELDEN_RING/" },
+            { store: "IsThereAnyDeal Price Check", sub: "Compare Authorized PC Key Deals", tag: "DEAL CHECK", url: "https://isthereanydeal.com/game/eldenring/info/" }
+          ],
+          mobileLinks: [
+            { store: "Steam Link Mobile", sub: "Stream from PC with Controller", tag: "REMOTE PLAY", url: "https://store.steampowered.com/app/353380/Steam_Link/" }
+          ],
+          pcSteps: ["Check IsThereAnyDeal / GG.deals for authorized Steam key discounts."],
+          mobileSteps: ["Pair a Bluetooth controller to your phone and play via Steam Link."]
+        },
+        {
+          name: "Palworld",
+          searchKeys: "Palworld Survival Crafting Co-op",
+          genres: ["adventure", "action"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · GAME PASS",
+          badge: "Survival",
+          fpsBadge: "PC · LAPTOP · CO-OP",
+          c1: "#0284c7", c2: "#14532d", c3: "#7dd3fc",
+          desc: "Open-world survival crafting adventure where you build bases, explore islands, and team up with Pals.",
+          pcDeal: "Play via PC Game Pass for the lowest monthly entry cost, or buy on Steam during sales.",
+          mobileDeal: "Play on phones/tablets via Xbox Cloud Gaming; avoid fake mobile clones.",
+          platTags: ["💻 PC / Laptop", "☁️ Xbox Cloud"],
+          storeChips: ["Steam", "Xbox PC"],
+          pcLinks: [
+            { store: "Steam Store", sub: "PC & Laptop · Dedicated Servers", tag: "BUY PC", url: "https://store.steampowered.com/app/1623730/Palworld/" },
+            { store: "Xbox App / PC Game Pass", sub: "Included in PC Game Pass", tag: "GAME PASS", url: "https://www.xbox.com/games/store/palworld-game-preview/9NKV34XWD014" }
+          ],
+          mobileLinks: [
+            { store: "Xbox Cloud Gaming", sub: "Play in Mobile Browser", tag: "CLOUD", url: "https://www.xbox.com/play" }
+          ],
+          pcSteps: ["Use PC Game Pass or grab a Steam seasonal sale discount."],
+          mobileSteps: ["Stream Palworld on mobile via Xbox Cloud Gaming."]
+        },
+        {
+          name: "Minecraft",
+          searchKeys: "Minecraft Java Bedrock Sandbox",
+          genres: ["adventure"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "paid",
+          priceLabel: "BUNDLE / GAME PASS",
+          badge: "Sandbox",
+          fpsBadge: "JAVA · BEDROCK · MOBILE",
+          c1: "#4d7c0f", c2: "#164e63", c3: "#a3e635",
+          desc: "Legendary block-building sandbox with Survival, Creative, multiplayer servers, and Java mods/shaders.",
+          pcDeal: "Buy the Java & Bedrock PC bundle on Minecraft.net or play via PC Game Pass while subscribed.",
+          mobileDeal: "Low one-time purchase on Google Play (Android) & Apple App Store (iOS).",
+          platTags: ["💻 PC / Laptop", "📱 Mobile", "🔄 Cross-Play"],
+          storeChips: ["Minecraft.net", "Xbox PC", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Minecraft.net (Java & Bedrock)", sub: "Official PC & Laptop Bundle", tag: "BUY PC", url: "https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc" },
+            { store: "Xbox App / PC Game Pass", sub: "Included with PC Game Pass", tag: "GAME PASS", url: "https://www.xbox.com/games/store/minecraft-java-bedrock-edition-for-pc/9NXP44L49SHJ" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Minecraft Bedrock Android", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe" },
+            { store: "Apple App Store", sub: "Minecraft Bedrock iOS", tag: "iOS", url: "https://apps.apple.com/app/minecraft/id479516143" }
+          ],
+          pcSteps: ["Get the Java & Bedrock PC bundle on Minecraft.net or Microsoft Store."],
+          mobileSteps: ["Purchase once on Google Play or Apple App Store."]
+        },
+        {
+          name: "Roblox",
+          searchKeys: "Roblox Experiences Multiplayer Sandbox",
+          genres: ["free", "adventure", "strategy"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Metaverse",
+          fpsBadge: "PC · MAC · ANDROID · iOS",
+          c1: "#dc2626", c2: "#1e1b4b", c3: "#f87171",
+          desc: "User-generated gaming universe with millions of multiplayer experiences, simulators, and obbies.",
+          pcDeal: "100% Free on Roblox.com & Microsoft Store; buy Robux directly or via official gift cards.",
+          mobileDeal: "100% Free on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Mac", "📱 Mobile", "🔄 Cross-Play"],
+          storeChips: ["Roblox.com", "Microsoft Store", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Roblox Official (PC & Mac)", sub: "Free Direct Download", tag: "FREE", url: "https://www.roblox.com/download" },
+            { store: "Microsoft Store", sub: "Free Windows 10/11 App", tag: "FREE", url: "https://apps.microsoft.com/detail/9nblgggzm6wm" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Official Android App", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.roblox.client" },
+            { store: "Apple App Store", sub: "Official iOS App", tag: "iOS", url: "https://apps.apple.com/app/roblox/id431946152" }
+          ],
+          pcSteps: ["Download free on Roblox.com and enable 2-Step Verification."],
+          mobileSteps: ["Install free from Google Play or Apple App Store."]
+        },
+        {
+          name: "Genshin Impact",
+          searchKeys: "Genshin Impact HoYoverse Open World RPG",
+          genres: ["free", "adventure"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Action RPG",
+          fpsBadge: "PC · LAPTOP · ANDROID · iOS",
+          c1: "#0284c7", c2: "#312e81", c3: "#7dd3fc",
+          desc: "Open-world elemental action RPG set across Teyvat with story quests, co-op bosses, and cross-save.",
+          pcDeal: "100% Free on HoYoPlay & Epic Games Store.",
+          mobileDeal: "100% Free on Google Play & Apple App Store with full cross-save.",
+          platTags: ["💻 PC / Laptop", "📱 Mobile", "🔄 Cross-Save"],
+          storeChips: ["HoYoPlay", "Epic Games", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "HoYoPlay Official Launcher", sub: "Free PC & Laptop Client", tag: "FREE PC", url: "https://genshin.hoyoverse.com/en/download" },
+            { store: "Epic Games Store", sub: "Free Windows Download", tag: "FREE PC", url: "https://store.epicgames.com/en-US/p/genshin-impact" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Free Android Download", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" },
+            { store: "Apple App Store", sub: "Free iOS/iPadOS Download", tag: "iOS", url: "https://apps.apple.com/app/genshin-impact/id1517783697" }
+          ],
+          pcSteps: ["Download HoYoPlay free and link a HoYoverse account."],
+          mobileSteps: ["Install free on Google Play or App Store over Wi-Fi."]
+        },
+        {
+          name: "League of Legends & Wild Rift",
+          searchKeys: "League of Legends LoL Wild Rift MOBA",
+          genres: ["free", "action", "strategy"],
+          platforms: ["pc", "mobile"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "5v5 MOBA",
+          fpsBadge: "PC · MAC · ANDROID · iOS",
+          c1: "#0369a1", c2: "#1e1b4b", c3: "#38bdf8",
+          desc: "Competitive 5v5 MOBA on PC/Mac and touch-optimized 5v5 MOBA action in Wild Rift on mobile.",
+          pcDeal: "100% Free on Riot Client (Windows & macOS).",
+          mobileDeal: "Wild Rift is 100% Free on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Mac", "📱 Mobile"],
+          storeChips: ["Riot Client", "Epic Games", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "LeagueOfLegends.com", sub: "Free Windows & Mac Client", tag: "FREE", url: "https://www.leagueoflegends.com/" }
+          ],
+          mobileLinks: [
+            { store: "Google Play (Wild Rift)", sub: "Free Android 5v5 MOBA", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.riotgames.league.wildrift" },
+            { store: "Apple App Store (Wild Rift)", sub: "Free iOS 5v5 MOBA", tag: "iOS", url: "https://apps.apple.com/app/league-of-legends-wild-rift/id1480616990" }
+          ],
+          pcSteps: ["Install Riot Client free—runs smoothly on everyday laptops."],
+          mobileSteps: ["Download Wild Rift free on Android or iOS."]
+        },
+        {
+          name: "Among Us",
+          searchKeys: "Among Us Social Deduction Party",
+          genres: ["free", "adventure", "strategy"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "LOW PC · FREE MOBILE",
+          badge: "Party Game",
+          fpsBadge: "PC · LAPTOP · ANDROID · iOS",
+          c1: "#dc2626", c2: "#1e293b", c3: "#fda4af",
+          desc: "Multiplayer social deduction party game for 4–15 players completing tasks while spotting impostors.",
+          pcDeal: "Very low price on Steam & Epic Games (often discounted under $3 during sales).",
+          mobileDeal: "Free to play on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Laptop", "📱 Mobile", "🔄 Cross-Play"],
+          storeChips: ["Steam", "Epic Games", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Steam Store", sub: "PC & Laptop Edition", tag: "BUY PC", url: "https://store.steampowered.com/app/945360/Among_Us/" },
+            { store: "Epic Games Store", sub: "Windows PC Edition", tag: "BUY PC", url: "https://store.epicgames.com/en-US/p/among-us" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Free Mobile Edition", tag: "FREE ANDROID", url: "https://play.google.com/store/apps/details?id=com.innersloth.spacemafia" },
+            { store: "Apple App Store", sub: "Free Mobile Edition", tag: "FREE iOS", url: "https://apps.apple.com/app/among-us/id1351168404" }
+          ],
+          pcSteps: ["Grab on Steam or Epic during sales; runs on any laptop."],
+          mobileSteps: ["Download free on Google Play or Apple App Store."]
+        },
+        {
+          name: "Terraria",
+          searchKeys: "Terraria 2D Sandbox Adventure Crafting",
+          genres: ["adventure"],
+          platforms: ["pc", "mobile"],
+          priceType: "paid",
+          priceLabel: "BUDGET · 50% OFF SALES",
+          badge: "2D Sandbox",
+          fpsBadge: "PC · MAC · ANDROID · iOS",
+          c1: "#15803d", c2: "#1e3a8a", c3: "#4ade80",
+          desc: "2D action-adventure sandbox packed with digging, boss fights, crafting, and massive replayability.",
+          pcDeal: "Frequently drops to ~$5 on Steam & GOG.com during seasonal sales.",
+          mobileDeal: "Low one-time purchase on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Mac", "📱 Mobile"],
+          storeChips: ["Steam", "GOG", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Steam Store", sub: "PC, Mac & Linux + Mods", tag: "BUY PC", url: "https://store.steampowered.com/app/105600/Terraria/" },
+            { store: "GOG.com (DRM-Free)", sub: "Offline PC/Laptop Installer", tag: "DRM-FREE", url: "https://www.gog.com/en/game/terraria" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Full Android Edition", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.and.games505.TerrariaPaid" },
+            { store: "Apple App Store", sub: "Full iOS Edition", tag: "iOS", url: "https://apps.apple.com/app/terraria/id640364616" }
+          ],
+          pcSteps: ["Buy on Steam or GOG during sales; runs on any laptop."],
+          mobileSteps: ["One-time purchase on Google Play or Apple App Store."]
+        },
+        {
+          name: "Stardew Valley",
+          searchKeys: "Stardew Valley Farming RPG Co-op",
+          genres: ["adventure", "strategy"],
+          platforms: ["pc", "mobile"],
+          priceType: "paid",
+          priceLabel: "BUDGET · SALE DEALS",
+          badge: "Cozy RPG",
+          fpsBadge: "PC · MAC · ANDROID · iOS",
+          c1: "#65a30d", c2: "#0369a1", c3: "#bef264",
+          desc: "Beloved farming, town-life, and dungeon-crawling RPG playable solo or in 4-player co-op.",
+          pcDeal: "Low base price with regular discounts on Steam & GOG.com.",
+          mobileDeal: "Low one-time purchase on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Mac", "📱 Mobile"],
+          storeChips: ["Steam", "GOG", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Steam Store", sub: "PC, Mac & Linux + Co-op", tag: "BUY PC", url: "https://store.steampowered.com/app/413150/Stardew_Valley/" },
+            { store: "GOG.com (DRM-Free)", sub: "Offline PC/Laptop Installer", tag: "DRM-FREE", url: "https://www.gog.com/en/game/stardew_valley" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Official Android Edition", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley" },
+            { store: "Apple App Store", sub: "Official iOS Edition", tag: "iOS", url: "https://apps.apple.com/app/stardew-valley/id1406710800" }
+          ],
+          pcSteps: ["Buy on Steam or GOG—lightweight and battery-friendly on laptops."],
+          mobileSteps: ["One-time purchase on Google Play or App Store."]
+        },
+        {
+          name: "Clash Royale",
+          searchKeys: "Clash Royale Supercell Card Strategy",
+          genres: ["free", "strategy"],
+          platforms: ["mobile", "pc", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Card Strategy",
+          fpsBadge: "ANDROID · iOS · PLAY GAMES PC",
+          c1: "#2563eb", c2: "#3730a3", c3: "#60a5fa",
+          desc: "Real-time head-to-head card strategy and tower defense duels with Supercell ID cross-save.",
+          pcDeal: "100% Free natively on Windows PC & Laptop via Google Play Games for PC.",
+          mobileDeal: "100% Free on Google Play & Apple App Store.",
+          platTags: ["📱 Android & iOS", "💻 PC Play Games", "🔄 Supercell ID"],
+          storeChips: ["Play Store", "App Store", "Google Play PC"],
+          pcLinks: [
+            { store: "Google Play Games for PC", sub: "Official Native Windows Client", tag: "PC / LAPTOP", url: "https://play.google.com/googleplaygames" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Official Supercell Android", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.supercell.clashroyale" },
+            { store: "Apple App Store", sub: "Official Supercell iOS", tag: "iOS", url: "https://apps.apple.com/app/clash-royale/id1053012308" }
+          ],
+          pcSteps: ["Play natively on Windows via Google Play Games for PC."],
+          mobileSteps: ["Download free and connect Supercell ID to save your deck progress."]
+        },
+        {
+          name: "Brawl Stars",
+          searchKeys: "Brawl Stars Supercell 3v3 Arena",
+          genres: ["free", "action", "strategy"],
+          platforms: ["mobile", "pc", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "3v3 Brawler",
+          fpsBadge: "ANDROID · iOS · PLAY GAMES PC",
+          c1: "#eab308", c2: "#6b21a8", c3: "#fde047",
+          desc: "Fast-paced 3v3 multiplayer brawler and showdown modes with unlockable brawlers and gadgets.",
+          pcDeal: "100% Free natively on Windows via Google Play Games for PC.",
+          mobileDeal: "100% Free on Google Play & Apple App Store.",
+          platTags: ["📱 Android & iOS", "💻 PC Play Games", "🔄 Supercell ID"],
+          storeChips: ["Play Store", "App Store", "Google Play PC"],
+          pcLinks: [
+            { store: "Google Play Games for PC", sub: "Official Windows PC/Laptop App", tag: "PC / LAPTOP", url: "https://play.google.com/googleplaygames" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Official Android Download", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.supercell.brawlstars" },
+            { store: "Apple App Store", sub: "Official iOS Download", tag: "iOS", url: "https://apps.apple.com/app/brawl-stars/id1229016807" }
+          ],
+          pcSteps: ["Install Google Play Games on Windows to play on PC/Laptop."],
+          mobileSteps: ["Download free on Google Play or Apple App Store."]
+        },
+        {
+          name: "Subway Surfers",
+          searchKeys: "Subway Surfers Endless Runner Arcade",
+          genres: ["free", "racing", "strategy"],
+          platforms: ["mobile"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Arcade Runner",
+          fpsBadge: "ANDROID · iOS",
+          c1: "#e11d48", c2: "#0369a1", c3: "#f472b6",
+          desc: "Classic endless runner arcade game where you dodge trains, collect coins, and unlock hoverboards.",
+          pcDeal: "Built for mobile; check Google Play Games on PC for Windows support.",
+          mobileDeal: "100% Free on Google Play & Apple App Store.",
+          platTags: ["📱 Android & iOS"],
+          storeChips: ["Play Store", "App Store"],
+          pcLinks: [
+            { store: "SYBO Official Page", sub: "Official Game Info", tag: "OFFICIAL", url: "https://sybogames.com/games/subway-surfers/" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Free Android Download", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf" },
+            { store: "Apple App Store", sub: "Free iOS Download", tag: "iOS", url: "https://apps.apple.com/app/subway-surfers/id512939461" }
+          ],
+          pcSteps: ["Best played on smartphone or tablet."],
+          mobileSteps: ["Install free from Google Play or Apple App Store."]
+        },
+        {
+          name: "Forza Horizon 5",
+          searchKeys: "Forza Horizon 5 Open World Racing Cars",
+          genres: ["racing"],
+          platforms: ["pc"],
+          priceType: "paid",
+          priceLabel: "PAID · GAME PASS",
+          badge: "Open-World Racing",
+          fpsBadge: "PC · LAPTOP · CLOUD",
+          c1: "#0891b2", c2: "#1e3a8a", c3: "#67e8f9",
+          desc: "Open-world racing festival across Mexico with hundreds of licensed cars, tuning, and online events.",
+          pcDeal: "Play via PC Game Pass for the lowest entry price, or grab 50% off during Steam/Xbox sales.",
+          mobileDeal: "Stream on phones/tablets via Xbox Cloud Gaming.",
+          platTags: ["💻 PC / Laptop", "☁️ Xbox Cloud"],
+          storeChips: ["Steam", "Xbox PC"],
+          pcLinks: [
+            { store: "Steam Store", sub: "PC & Laptop · Cross-Play", tag: "BUY PC", url: "https://store.steampowered.com/app/1551360/Forza_Horizon_5/" },
+            { store: "Xbox App / PC Game Pass", sub: "Included in PC Game Pass", tag: "GAME PASS", url: "https://www.xbox.com/games/store/forza-horizon-5-standard-edition/9NKX70BBCDRN" }
+          ],
+          mobileLinks: [
+            { store: "Xbox Cloud Gaming", sub: "Stream on Mobile/Laptop", tag: "CLOUD", url: "https://www.xbox.com/play" }
+          ],
+          pcSteps: ["Compare Steam sale prices or play with PC Game Pass."],
+          mobileSteps: ["Stream on mobile via Xbox Cloud Gaming."]
+        },
+        {
+          name: "Rocket League & Rocket League Sideswipe",
+          searchKeys: "Rocket League Sideswipe Car Soccer",
+          genres: ["free", "racing"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Car Sports",
+          fpsBadge: "PC · LAPTOP · MOBILE",
+          c1: "#1d4ed8", c2: "#4c1d95", c3: "#60a5fa",
+          desc: "High-octane rocket-powered car soccer on PC/laptop plus 2D side-scrolling car soccer in RL Sideswipe on mobile.",
+          pcDeal: "100% Free on Epic Games Store.",
+          mobileDeal: "Rocket League Sideswipe is 100% Free on official mobile storefronts.",
+          platTags: ["💻 PC / Laptop", "📱 Mobile", "🔄 Epic ID"],
+          storeChips: ["Epic Games", "App Store"],
+          pcLinks: [
+            { store: "Epic Games Store (PC)", sub: "Free Windows Download", tag: "FREE PC", url: "https://store.epicgames.com/en-US/p/rocket-league" }
+          ],
+          mobileLinks: [
+            { store: "RL Sideswipe Official", sub: "Mobile Car Soccer Portal", tag: "MOBILE", url: "https://sideswipe.rocketleague.com/" },
+            { store: "Apple App Store (Sideswipe)", sub: "Free iOS Download", tag: "iOS", url: "https://apps.apple.com/app/rocket-league-sideswipe/id1549027048" }
+          ],
+          pcSteps: ["Download free on Epic Games Launcher."],
+          mobileSteps: ["Install Rocket League Sideswipe and sign in with your Epic account."]
+        },
+        {
+          name: "Asphalt Legends Unite",
+          searchKeys: "Asphalt Legends Unite 9 Racing Hypercars",
+          genres: ["free", "racing"],
+          platforms: ["pc", "mobile", "cross"],
+          priceType: "free",
+          priceLabel: "FREE TO PLAY",
+          badge: "Arcade Racing",
+          fpsBadge: "PC · LAPTOP · ANDROID · iOS",
+          c1: "#db2777", c2: "#1e1b4b", c3: "#f472b6",
+          desc: "Arcade hypercar racing with nitro stunts, global tracks, and cross-platform multiplayer.",
+          pcDeal: "100% Free on Steam & Microsoft Store.",
+          mobileDeal: "100% Free on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Laptop", "📱 Mobile", "🔄 Cross-Play"],
+          storeChips: ["Steam", "Xbox PC", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Steam Store", sub: "Free PC & Laptop Download", tag: "FREE PC", url: "https://store.steampowered.com/app/1815780/Asphalt_Legends_Unite/" },
+            { store: "Microsoft Store", sub: "Free Windows App", tag: "FREE PC", url: "https://www.xbox.com/games/store/asphalt-legends-unite/9NZQPT0MWTD0" }
+          ],
+          mobileLinks: [
+            { store: "Google Play Store", sub: "Free Android Racing", tag: "ANDROID", url: "https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftA9HM" },
+            { store: "Apple App Store", sub: "Free iOS/Mac Racing", tag: "iOS", url: "https://apps.apple.com/app/asphalt-legends-unite/id805603214" }
+          ],
+          pcSteps: ["Install free on Steam or Microsoft Store."],
+          mobileSteps: ["Download free on Google Play or App Store."]
+        },
+        {
+          name: "EA SPORTS FC & EA SPORTS FC Mobile",
+          searchKeys: "EA Sports FC 25 Football Soccer Mobile",
+          genres: ["racing"],
+          platforms: ["pc", "mobile"],
+          priceType: "paid",
+          priceLabel: "PC SALE · MOBILE FREE",
+          badge: "Football / Sports",
+          fpsBadge: "PC · LAPTOP · ANDROID · iOS",
+          c1: "#059669", c2: "#0f172a", c3: "#34d399",
+          desc: "Full football simulation on PC/laptop and fast squad-building football action in EA SPORTS FC Mobile.",
+          pcDeal: "Wait for Steam/EA App seasonal sales (often 60–70% off) or play via EA Play / PC Game Pass.",
+          mobileDeal: "EA SPORTS FC Mobile is 100% Free on Google Play & Apple App Store.",
+          platTags: ["💻 PC / Laptop", "📱 Mobile"],
+          storeChips: ["Steam", "EA App", "Play Store", "App Store"],
+          pcLinks: [
+            { store: "Steam Store", sub: "PC & Laptop Edition", tag: "BUY PC", url: "https://store.steampowered.com/app/2669320/EA_SPORTS_FC_25/" },
+            { store: "EA App / EA Play", sub: "Included with EA Play", tag: "EA APP", url: "https://www.ea.com/games/ea-sports-fc/fc-25" }
+          ],
+          mobileLinks: [
+            { store: "Google Play (FC Mobile)", sub: "Free Android Football", tag: "FREE ANDROID", url: "https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile" },
+            { store: "Apple App Store (FC Mobile)", sub: "Free iOS Football", tag: "FREE iOS", url: "https://apps.apple.com/app/ea-sports-fc-mobile-soccer/id1094930513" }
+          ],
+          pcSteps: ["Compare Steam seasonal discounts or EA Play / Game Pass before buying."],
+          mobileSteps: ["Install EA SPORTS FC Mobile free on Google Play or App Store."]
+        }
+      ];
+
+      const grid = document.getElementById('games');
+      const countEl = document.getElementById('count');
+      const totalStatEl = document.getElementById('totalStat');
+      const searchInput = document.getElementById('search');
+
+      if (totalStatEl) totalStatEl.textContent = String(GAMES.length);
+
+      if (grid) {
+        grid.innerHTML = GAMES.map((g, idx) => `
+          <article class="card"
+            data-index="${idx}"
+            data-name="${g.name} ${g.searchKeys} ${g.storeChips.join(' ')} ${g.platforms.join(' ')}"
+            data-type="${g.genres.join(' ')}"
+            data-platforms="${g.platforms.join(' ')}"
+            style="--c1:${g.c1};--c2:${g.c2}">
+            <div class="art">
+              ${buildProceduralSvgBanner(g, idx)}
+              <div class="cover-shade"></div>
+              <span class="price-pill ${g.priceType}">${g.priceLabel}</span>
+              <div class="arttitle">${g.name.toUpperCase()}</div>
+              <span class="fps">${g.fpsBadge}</span>
+            </div>
+            <div class="body">
+              <div class="row">
+                <h3>${g.name}</h3>
+                <button class="favorite" type="button" data-action="toggle-fav" data-index="${idx}" aria-label="Save ${g.name} to favourites">♡</button>
+                <span class="badge">${g.badge}</span>
+              </div>
+              <div class="plat-row">
+                ${g.platTags.map(t => `<span class="plat-tag">${t}</span>`).join('')}
+              </div>
+              <p class="desc">${g.desc}</p>
+              <div class="deal-box">
+                <div class="deal-line"><b>💻 Best PC / Laptop Deal:</b> ${g.pcDeal}</div>
+                <div class="deal-line"><b>📱 Mobile / Cloud:</b> ${g.mobileDeal}</div>
+              </div>
+              <div class="meta">
+                <div class="store-hints">
+                  ${g.storeChips.map(s => `<span class="store-chip">${s}</span>`).join('')}
+                </div>
+                <button class="play open-store-modal" type="button" data-action="open-game-modal" data-index="${idx}">Get / Buy Game ↗</button>
+              </div>
+            </div>
+          </article>
+        `).join('');
+      }
+
+      const cards = [...document.querySelectorAll('.card')];
+      let activeGenre = 'all';
+      let activePlatform = 'all';
+      let favOnly = false;
+
+      // =====================================================================
+      // 4. AUTHENTICATION, CELEBRATION OVERLAY & 2-STEP RECOVERY
+      // =====================================================================
+      const USERS_KEY = 'hexlo_users_v1';
+      const SESSION_KEY = 'hexlo_session_v1';
+      const GUEST_FAV_KEY = 'hexlo_guest_favs_v1';
+      const GUEST_DISMISSED_KEY = 'hexlo_guest_preview_v1';
+
+      let currentUser = null;
+      let favourites = new Set();
+
+      function syncBodyScrollLock() {
+        const authOpen = document.getElementById('authModalBackdrop')?.classList.contains('open');
+        const gameOpen = document.getElementById('gameModal')?.classList.contains('open');
+        const seoOpen = document.getElementById('seoModalBackdrop')?.classList.contains('open');
+        const celebOpen = document.getElementById('authSuccessOverlay')?.classList.contains('is-visible');
+        document.body.style.overflow = (authOpen || gameOpen || seoOpen || celebOpen) ? 'hidden' : '';
+      }
+
+      function loadUsers() {
+        try {
+          const raw = safeGet(window.localStorage, USERS_KEY);
+          const arr = raw ? JSON.parse(raw) : [];
+          return Array.isArray(arr) ? arr : [];
+        } catch (e) { return []; }
+      }
+
+      function saveUsers(users) {
+        safeSet(window.localStorage, USERS_KEY, JSON.stringify(users));
+      }
+
+      function getInitials(tag) {
+        const clean = String(tag || 'HX').replace(/[^a-zA-Z0-9]/g, '');
+        return (clean.slice(0, 2) || 'HX').toUpperCase();
+      }
+
+      function loadFavourites() {
+        if (currentUser && Array.isArray(currentUser.favourites)) {
+          favourites = new Set(currentUser.favourites);
+        } else {
+          try {
+            const raw = safeGet(window.localStorage, GUEST_FAV_KEY);
+            const arr = raw ? JSON.parse(raw) : [];
+            favourites = new Set(Array.isArray(arr) ? arr : []);
+          } catch (e) { favourites = new Set(); }
+        }
+      }
+
+      function persistFavourites() {
+        const list = [...favourites];
+        if (currentUser) {
+          currentUser.favourites = list;
+          const users = loadUsers();
+          const idx = users.findIndex(u => u.id === currentUser.id);
+          if (idx !== -1) {
+            users[idx].favourites = list;
+            saveUsers(users);
+          }
+        } else {
+          safeSet(window.localStorage, GUEST_FAV_KEY, JSON.stringify(list));
+        }
+      }
+
+      function syncFavoriteButtons() {
+        document.querySelectorAll('.favorite').forEach(btn => {
+          const card = btn.closest('.card');
+          const g = card ? GAMES[Number(card.dataset.index)] : null;
+          if (!g) return;
+          const saved = favourites.has(g.name);
+          btn.classList.toggle('saved', saved);
+          btn.textContent = saved ? '♥' : '♡';
+        });
+      }
+
+      function updateCatalog() {
+        const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        let shown = 0;
+        cards.forEach(c => {
+          const nameData = (c.dataset.name || '').toLowerCase();
+          const typeData = (c.dataset.type || '').split(' ');
+          const platData = (c.dataset.platforms || '').split(' ');
+          const g = GAMES[Number(c.dataset.index)];
+
+          const okName = !q || nameData.includes(q);
+          const okGenre = activeGenre === 'all' || typeData.includes(activeGenre);
+          const okPlat = activePlatform === 'all' || platData.includes(activePlatform);
+          const okFav = !favOnly || (g && favourites.has(g.name));
+          const show = okName && okGenre && okPlat && okFav;
+          c.style.display = show ? '' : 'none';
+          if (show) shown++;
+        });
+        if (countEl) countEl.textContent = `${shown} OF ${GAMES.length} GAMES SHOWN`;
+      }
+
+      const authArea = document.getElementById('authArea');
+      const heroEyebrow = document.getElementById('heroEyebrow');
+      const heroSubtitle = document.getElementById('heroSubtitle');
+
+      function renderAuthUI(animatePill) {
+        loadFavourites();
+        syncFavoriteButtons();
+        if (!authArea) return;
+
+        if (!currentUser) {
+          authArea.innerHTML = `<button class="auth-trigger" type="button" id="openSignInBtn" data-action="open-login">👤 Sign In / Join HEXLO</button>`;
+          if (heroEyebrow) heroEyebrow.textContent = 'HEXLO • PC • LAPTOP • MOBILE GAMING UNIVERSE';
+          if (heroSubtitle) {
+            heroSubtitle.textContent = 'Your multi-platform gaming portal to discover 28 top PC, Laptop, Android & iOS games, compare where to buy or download for the lowest market price, and sync your gamer profile.';
+          }
+          return;
+        }
+
+        const initials = getInitials(currentUser.gamerTag);
+        authArea.innerHTML = `
+          <button class="userpill-btn${animatePill ? ' just-authenticated' : ''}" type="button" id="profileMenuBtn" data-action="toggle-profile-menu" aria-expanded="false">
+            <span class="avatar">${initials}</span>
+            <span>
+              <b style="font-size:12.5px">${currentUser.gamerTag}</b><br>
+              <span style="color:#4ade80;font-size:10px;font-family:var(--font-mono)">● ONLINE</span>
+            </span>
+            <span style="font-size:10px;color:#b8add6">▾</span>
+          </button>
+          <div class="profile-menu" id="profileMenu">
+            <div class="pm-header">
+              <strong>${currentUser.gamerTag}</strong>
+              <small>${currentUser.email}</small>
+              <span class="pm-badge">${currentUser.platform || 'PC & Laptop'}</span>
+            </div>
+            <button class="pm-item" type="button" id="pmViewFavs" data-action="pm-favs">
+              <span>♥ Saved Favourites</span>
+              <b style="color:#f472b6">${favourites.size}</b>
+            </button>
+            <button class="pm-item" type="button" id="pmSwitchAccount" data-action="open-login">
+              <span>⇄ Switch Account</span>
+              <span>→</span>
+            </button>
+            <button class="pm-item danger" type="button" id="pmLogout" data-action="logout">
+              <span>⎋ Sign Out</span>
+              <span>✕</span>
+            </button>
+          </div>
+        `;
+      }
+
+      function setSession(user, remember, animatePill) {
+        currentUser = user;
+        if (remember) {
+          safeSet(window.localStorage, SESSION_KEY, user.id);
+          safeRemove(window.sessionStorage, SESSION_KEY);
+        } else {
+          safeSet(window.sessionStorage, SESSION_KEY, user.id);
+          safeRemove(window.localStorage, SESSION_KEY);
+        }
+        renderAuthUI(Boolean(animatePill));
+        if (favOnly) updateCatalog();
+      }
+
+      function signOutUser() {
+        currentUser = null;
+        safeRemove(window.localStorage, SESSION_KEY);
+        safeRemove(window.sessionStorage, SESSION_KEY);
+        renderAuthUI(false);
+        if (favOnly) updateCatalog();
+        showToast('Signed out of HEXLO');
+      }
+
+      // Celebration & Warp-In Overlay Controller
+      const authSuccessOverlay = document.getElementById('authSuccessOverlay');
+      const authBurstCanvas = document.getElementById('authBurstCanvas');
+      const authStatusChip = document.getElementById('authStatusChip');
+      const authWarpAvatar = document.getElementById('authWarpAvatar');
+      const authWarpTitle = document.getElementById('authWarpTitle');
+      const authWarpSub = document.getElementById('authWarpSub');
+
+      let authAnimTimer = null;
+      let burstRafId = null;
+
+      function stopBurstParticles() {
+        if (burstRafId) {
+          cancelAnimationFrame(burstRafId);
+          burstRafId = null;
+        }
+        if (authBurstCanvas && authBurstCanvas.getContext) {
+          const bCtx = authBurstCanvas.getContext('2d');
+          bCtx.clearRect(0, 0, authBurstCanvas.width, authBurstCanvas.height);
+        }
+      }
+
+      function launchBurstParticles() {
+        if (!authBurstCanvas || !authBurstCanvas.getContext || motionMode !== 'ultra') return;
+        stopBurstParticles();
+
+        const bCtx = authBurstCanvas.getContext('2d');
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const bw = window.innerWidth;
+        const bh = window.innerHeight;
+        authBurstCanvas.width = Math.floor(bw * dpr);
+        authBurstCanvas.height = Math.floor(bh * dpr);
+        bCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        const palette = ['#e879f9', '#67e8f9', '#a855f7', '#4ade80', '#38bdf8', '#f472b6'];
+        const particles = Array.from({ length: 68 }, (_, idx) => {
+          const angle = (Math.PI * 2 * idx) / 68 + (Math.random() - 0.5) * 0.25;
+          const speed = 3.2 + Math.random() * 8.5;
+          return {
+            x: bw * 0.5,
+            y: bh * 0.5,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            size: 2.2 + Math.random() * 3.4,
+            alpha: 1,
+            decay: 0.013 + Math.random() * 0.012,
+            color: palette[idx % palette.length],
+            isShard: idx % 3 === 0
+          };
+        });
+
+        function renderBurst() {
+          bCtx.clearRect(0, 0, bw, bh);
+          let alive = false;
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            if (p.alpha <= 0) continue;
+            alive = true;
+            p.x += p.vx;
+            p.y += p.vy;
+            p.vx *= 0.965;
+            p.vy *= 0.965;
+            p.alpha -= p.decay;
+
+            bCtx.save();
+            bCtx.globalAlpha = Math.max(0, p.alpha);
+            bCtx.fillStyle = p.color;
+            if (p.isShard) {
+              bCtx.translate(p.x, p.y);
+              bCtx.rotate(Math.atan2(p.vy, p.vx));
+              bCtx.fillRect(-p.size * 1.6, -p.size * 0.5, p.size * 3.2, p.size);
+            } else {
+              bCtx.beginPath();
+              bCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+              bCtx.fill();
+            }
+            bCtx.restore();
+          }
+          if (alive) {
+            burstRafId = requestAnimationFrame(renderBurst);
+          } else {
+            stopBurstParticles();
+          }
+        }
+        burstRafId = requestAnimationFrame(renderBurst);
+      }
+
+      function dismissAuthSuccessOverlay() {
+        clearTimeout(authAnimTimer);
+        if (!authSuccessOverlay) return;
+        authSuccessOverlay.classList.add('is-exiting');
+        authSuccessOverlay.style.pointerEvents = 'none';
+        setTimeout(() => {
+          authSuccessOverlay.classList.remove('is-visible', 'is-armed', 'is-exiting');
+          authSuccessOverlay.style.display = 'none';
+          authSuccessOverlay.style.pointerEvents = 'none';
+          stopBurstParticles();
+          renderAuthUI(true);
+          syncBodyScrollLock();
+        }, 320);
+      }
+
+      function playAuthSuccessAnimation(user, mode) {
+        const isSignup = mode === 'signup';
+        const fallbackToast = isSignup
+          ? `Welcome to HEXLO, ${user.gamerTag}! Account created ✦`
+          : `Welcome back to HEXLO, ${user.gamerTag} ● ONLINE`;
+
+        if (motionMode === 'reduced' || !authSuccessOverlay) {
+          renderAuthUI(true);
+          syncBodyScrollLock();
+          showToast(fallbackToast);
+          return;
+        }
+
+        clearTimeout(authAnimTimer);
+        if (authStatusChip) {
+          authStatusChip.textContent = isSignup
+            ? '✦ ACCOUNT INITIALIZED // PROFILE ACTIVE'
+            : '● ACCESS GRANTED // WELCOME BACK';
+        }
+        if (authWarpAvatar) authWarpAvatar.textContent = getInitials(user.gamerTag);
+        if (authWarpTitle) {
+          authWarpTitle.textContent = isSignup
+            ? `WELCOME TO HEXLO, ${user.gamerTag.toUpperCase()}`
+            : `WELCOME BACK, ${user.gamerTag.toUpperCase()}`;
+        }
+        if (authWarpSub) {
+          authWarpSub.textContent = isSignup
+            ? `Profile created for ${user.platform || 'PC & Laptop'}. Unlocking 28 games & best-price deal guides…`
+            : `Session synced on ${user.platform || 'PC & Laptop'}. Launching your HEXLO dashboard…`;
+        }
+
+        authSuccessOverlay.style.display = 'grid';
+        authSuccessOverlay.style.pointerEvents = 'auto';
+        authSuccessOverlay.classList.remove('is-exiting', 'is-armed');
+        authSuccessOverlay.classList.add('is-visible');
+        syncBodyScrollLock();
+        void authSuccessOverlay.offsetWidth;
+        authSuccessOverlay.classList.add('is-armed');
+
+        launchBurstParticles();
+
+        const duration = motionMode === 'balanced' ? 1150 : 1650;
+        authAnimTimer = setTimeout(dismissAuthSuccessOverlay, duration);
+      }
+
+      // Restore existing session if signed in
+      (() => {
+        const savedId = safeGet(window.sessionStorage, SESSION_KEY) || safeGet(window.localStorage, SESSION_KEY);
+        if (savedId) {
+          const found = loadUsers().find(u => u.id === savedId);
+          if (found) currentUser = found;
+        }
+      })();
+
+      const authBackdrop = document.getElementById('authModalBackdrop');
+      const authError = document.getElementById('authError');
+      const loginForm = document.getElementById('loginForm');
+      const signupForm = document.getElementById('signupForm');
+      const resetForm = document.getElementById('resetForm');
+      const authTabs = document.getElementById('authTabs');
+
+      function showAuthError(msg) {
+        if (!authError) return;
+        authError.textContent = msg;
+        authError.classList.add('show');
+      }
+      function clearAuthError() {
+        if (!authError) return;
+        authError.textContent = '';
+        authError.classList.remove('show');
+      }
+
+      function switchAuthView(view) {
+        clearAuthError();
+        if (loginForm) loginForm.classList.toggle('active', view === 'login');
+        if (signupForm) signupForm.classList.toggle('active', view === 'signup');
+        if (resetForm) resetForm.classList.toggle('active', view === 'reset');
+        document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.authTab === view));
+        if (authTabs) authTabs.style.display = view === 'reset' ? 'none' : 'grid';
+      }
+
+      function openAuthModal(tab) {
+        switchAuthView(tab || 'login');
+        if (authBackdrop) {
+          authBackdrop.style.display = 'flex';
+          authBackdrop.style.pointerEvents = 'auto';
+          authBackdrop.classList.add('open');
+          syncBodyScrollLock();
+        }
+      }
+
+      function closeAuthModal(asGuest) {
+        if (asGuest) safeSet(window.sessionStorage, GUEST_DISMISSED_KEY, '1');
+        if (authBackdrop) {
+          authBackdrop.classList.remove('open');
+          authBackdrop.style.display = 'none';
+          authBackdrop.style.pointerEvents = 'none';
+        }
+        syncBodyScrollLock();
+      }
+
+      // Password Strength Meter
+      const signupPassInput = document.getElementById('signupPassword');
+      const strengthFill = document.getElementById('strengthFill');
+      const strengthLabel = document.getElementById('strengthLabel');
+      const strengthScore = document.getElementById('strengthScore');
+      if (signupPassInput) {
+        signupPassInput.addEventListener('input', () => {
+          const val = signupPassInput.value;
+          let score = 0;
+          if (val.length >= 6) score++;
+          if (/[A-Z]/.test(val)) score++;
+          if (/[0-9]/.test(val)) score++;
+          if (/[^A-Za-z0-9]/.test(val)) score++;
+          const levels = [
+            { w: '0%', c: '#ef4444', t: 'Min 6 chars' },
+            { w: '25%', c: '#ef4444', t: 'Weak' },
+            { w: '50%', c: '#f59e0b', t: 'Fair' },
+            { w: '75%', c: '#38bdf8', t: 'Strong' },
+            { w: '100%', c: '#4ade80', t: 'Legendary' }
+          ];
+          const lvl = val.length === 0 ? levels[0] : levels[Math.max(1, score)];
+          if (strengthFill) { strengthFill.style.width = lvl.w; strengthFill.style.background = lvl.c; }
+          if (strengthLabel) { strengthLabel.textContent = lvl.t; strengthLabel.style.color = lvl.c; }
+          if (strengthScore) strengthScore.textContent = `${score}/4`;
+        });
+      }
+
+      // Sign Up Submission
+      if (signupForm) {
+        signupForm.addEventListener('submit', async e => {
+          e.preventDefault();
+          clearAuthError();
+          const tag = (document.getElementById('signupTag')?.value || '').trim();
+          const email = (document.getElementById('signupEmail')?.value || '').trim().toLowerCase();
+          const platform = document.getElementById('signupPlatform')?.value || 'PC & Laptop';
+          const password = document.getElementById('signupPassword')?.value || '';
+
+          if (tag.length < 3) return showAuthError('Gamer Tag must be at least 3 characters.');
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showAuthError('Enter a valid email address.');
+          if (password.length < 6) return showAuthError('Password must be at least 6 characters.');
+
+          const users = loadUsers();
+          if (users.some(u => u.email === email)) return showAuthError('This email is already registered. Sign in instead.');
+
+          const newUser = {
+            id: 'hexlo_' + Date.now(),
+            gamerTag: tag,
+            email,
+            platform,
+            passwordHash: await hashPassword(password),
+            favourites: [...favourites]
+          };
+          users.push(newUser);
+          saveUsers(users);
+          signupForm.reset();
+          setSession(newUser, true, false);
+          closeAuthModal(false);
+          playAuthSuccessAnimation(newUser, 'signup');
+        });
+      }
+
+      // Sign In Submission
+      if (loginForm) {
+        loginForm.addEventListener('submit', async e => {
+          e.preventDefault();
+          clearAuthError();
+          const id = (document.getElementById('loginIdentifier')?.value || '').trim().toLowerCase();
+          const pass = document.getElementById('loginPassword')?.value || '';
+          const remember = Boolean(document.getElementById('rememberMe')?.checked);
+
+          if (!id || !pass) return showAuthError('Enter your Email/Gamer Tag and password.');
+          const user = loadUsers().find(u => u.email === id || u.gamerTag.toLowerCase() === id);
+          if (!user) return showAuthError('Account not found. Click "Create Account" or "1-Click Demo Login".');
+
+          const hash = await hashPassword(pass);
+          if (hash !== user.passwordHash) return showAuthError('Incorrect password. Click "Forgot Password" to reset.');
+
+          loginForm.reset();
+          setSession(user, remember, false);
+          closeAuthModal(false);
+          playAuthSuccessAnimation(user, 'login');
+        });
+      }
+
+      async function triggerDemoLogin() {
+        const users = loadUsers();
+        let demo = users.find(u => u.email === 'player@hexlo.gg');
+        if (!demo) {
+          demo = {
+            id: 'hexlo_demo_user',
+            gamerTag: 'HexloCommander',
+            email: 'player@hexlo.gg',
+            platform: 'All Devices (PC + Mobile)',
+            passwordHash: await hashPassword('hexlo123'),
+            favourites: ['VALORANT', 'GTA 5 (Grand Theft Auto V)', 'Minecraft']
+          };
+          users.push(demo);
+          saveUsers(users);
+        }
+        setSession(demo, true, false);
+        closeAuthModal(false);
+        playAuthSuccessAnimation(demo, 'login');
+      }
+
+      // 2-Step Password Recovery
+      const recoveryStep1 = document.getElementById('recoveryStep1');
+      const recoveryStep2 = document.getElementById('recoveryStep2');
+      const resetIdInput = document.getElementById('resetIdentifier');
+      const resetOtpInput = document.getElementById('resetOtpInput');
+      const resetNewPassInput = document.getElementById('resetNewPassword');
+      let recoveryState = { userIndex: -1, otp: '', expiresAt: 0 };
+
+      async function sendRecoveryCode() {
+        clearAuthError();
+        const val = (resetIdInput?.value || '').trim().toLowerCase();
+        if (!val) return showAuthError('Enter your Email or Gamer Tag.');
+        let users = loadUsers();
+        let idx = users.findIndex(u => u.email === val || u.gamerTag.toLowerCase() === val);
+        if (idx === -1 && (val === 'player@hexlo.gg' || val === 'hexlocommander')) {
+          users.push({
+            id: 'hexlo_demo_user',
+            gamerTag: 'HexloCommander',
+            email: 'player@hexlo.gg',
+            platform: 'All Devices (PC + Mobile)',
+            passwordHash: await hashPassword('hexlo123'),
+            favourites: ['VALORANT', 'GTA 5 (Grand Theft Auto V)']
+          });
+          saveUsers(users);
+          idx = users.length - 1;
+        }
+        if (idx === -1) return showAuthError('No HEXLO account found for that email/tag. Try "Use Demo Email".');
+
+        const otp = String(Math.floor(100000 + Math.random() * 900000));
+        recoveryState = { userIndex: idx, otp, expiresAt: Date.now() + 10 * 60 * 1000 };
+        const otpDisplay = document.getElementById('generatedOtpDisplay');
+        const targetEl = document.getElementById('recoveryTargetEmail');
+        const mailLink = document.getElementById('mailtoResetLink');
+        if (otpDisplay) otpDisplay.textContent = otp;
+        if (targetEl) targetEl.textContent = `${users[idx].gamerTag} (${users[idx].email})`;
+        if (mailLink) {
+          mailLink.href = `mailto:${encodeURIComponent(users[idx].email)}?subject=${encodeURIComponent('HEXLO Password Reset Code')}&body=${encodeURIComponent(`Your HEXLO verification code is: ${otp}`)}`;
+        }
+        if (recoveryStep1) recoveryStep1.classList.remove('active');
+        if (recoveryStep2) recoveryStep2.classList.add('active');
+        showToast(`6-digit reset code generated: ${otp}`);
+      }
+
+      if (resetForm) {
+        resetForm.addEventListener('submit', async e => {
+          e.preventDefault();
+          clearAuthError();
+          const code = (resetOtpInput?.value || '').trim();
+          const newP = resetNewPassInput?.value || '';
+          if (code !== recoveryState.otp || Date.now() > recoveryState.expiresAt) {
+            return showAuthError('Invalid or expired 6-digit code.');
+          }
+          if (newP.length < 6) return showAuthError('New password must be at least 6 characters.');
+          const users = loadUsers();
+          if (!users[recoveryState.userIndex]) return showAuthError('Account record missing.');
+          users[recoveryState.userIndex].passwordHash = await hashPassword(newP);
+          saveUsers(users);
+          resetForm.reset();
+          if (recoveryStep2) recoveryStep2.classList.remove('active');
+          if (recoveryStep1) recoveryStep1.classList.add('active');
+          switchAuthView('login');
+          showToast('HEXLO password updated! Sign in now ✓');
+        });
+      }
+
+      renderAuthUI(false);
+
+      // =====================================================================
+      // 5. ENTRANCE CURTAIN -> IMMEDIATE LOGIN / SIGN UP GATE TRIGGER
+      // =====================================================================
+      const entryCurtain = document.getElementById('entryCurtain');
+      let curtainTimer = null;
+
+      function hideCurtainCompletely() {
+        if (!entryCurtain) return;
+        entryCurtain.classList.add('is-exiting', 'is-hidden');
+        entryCurtain.classList.remove('is-armed');
+        entryCurtain.style.display = 'none';
+        entryCurtain.style.pointerEvents = 'none';
+      }
+
+      function finishEntranceAndPromptAuth() {
+        clearTimeout(curtainTimer);
+        if (!entryCurtain) {
+          if (!currentUser && !safeGet(window.sessionStorage, GUEST_DISMISSED_KEY)) openAuthModal('login');
+          return;
+        }
+        entryCurtain.classList.add('is-exiting');
+        entryCurtain.style.pointerEvents = 'none';
+        setTimeout(() => {
+          hideCurtainCompletely();
+          if (!currentUser && !safeGet(window.sessionStorage, GUEST_DISMISSED_KEY)) {
+            openAuthModal('login');
+          }
+        }, 360);
+      }
+
+      function startEntranceCurtain() {
+        clearTimeout(curtainTimer);
+        if (!entryCurtain) return;
+        if (motionMode === 'reduced') {
+          hideCurtainCompletely();
+          if (!currentUser && !safeGet(window.sessionStorage, GUEST_DISMISSED_KEY)) {
+            openAuthModal('login');
+          }
+          return;
+        }
+        entryCurtain.style.display = 'grid';
+        entryCurtain.style.pointerEvents = 'auto';
+        entryCurtain.classList.remove('is-hidden', 'is-exiting', 'is-armed');
+        void entryCurtain.offsetWidth;
+        entryCurtain.classList.add('is-armed');
+        curtainTimer = setTimeout(finishEntranceAndPromptAuth, 1300);
+      }
+
+      startEntranceCurtain();
+
+      // =====================================================================
+      // 6. GAME DEAL MODAL, SEO MODAL & BULLETPROOF DOCUMENT EVENT DELEGATION
+      // =====================================================================
+      if (searchInput) searchInput.addEventListener('input', updateCatalog);
+
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const qParam = urlParams.get('q');
+        if (qParam && searchInput) {
+          searchInput.value = qParam;
+          updateCatalog();
+        }
+      } catch (e) {}
+
+      const gameModal = document.getElementById('gameModal');
+      function openGameModal(idx) {
+        const g = GAMES[idx];
+        if (!g || !gameModal) return;
+        const heroArt = document.getElementById('modalHeroArt');
+        const badges = document.getElementById('modalBadges');
+        const title = document.getElementById('modalTitle');
+        const desc = document.getElementById('modalDesc');
+        const pcLinks = document.getElementById('modalPcLinks');
+        const mobLinks = document.getElementById('modalMobileLinks');
+        const pcSteps = document.getElementById('modalPcSteps');
+        const mobSteps = document.getElementById('modalMobileSteps');
+
+        if (heroArt) heroArt.innerHTML = buildProceduralSvgBanner(g, idx);
+        if (badges) {
+          badges.innerHTML = `<span class="badge">${g.badge}</span><span class="badge" style="color:#6ee7b7;background:rgba(6,78,59,0.85)">${g.priceLabel}</span>`;
+        }
+        if (title) title.textContent = g.name;
+        if (desc) {
+          desc.innerHTML = `${g.desc}<br><span style="color:#67e8f9;font-weight:700">Lowest-Price Tip:</span> Compare official stores and authorized key sellers on <b>IsThereAnyDeal</b> &amp; <b>GG.deals</b> before purchasing.`;
+        }
+        if (pcLinks) {
+          pcLinks.innerHTML = g.pcLinks.map(l => `
+            <a class="m-store-btn" href="${l.url}" target="_blank" rel="noopener noreferrer">
+              <div class="m-store-left"><strong>${l.store} ↗</strong><small>${l.sub}</small></div>
+              <span class="m-store-tag">${l.tag}</span>
+            </a>
+          `).join('');
+        }
+        if (mobLinks) {
+          mobLinks.innerHTML = g.mobileLinks.map(l => `
+            <a class="m-store-btn" href="${l.url}" target="_blank" rel="noopener noreferrer">
+              <div class="m-store-left"><strong>${l.store} ↗</strong><small>${l.sub}</small></div>
+              <span class="m-store-tag">${l.tag}</span>
+            </a>
+          `).join('');
+        }
+        if (pcSteps) pcSteps.innerHTML = g.pcSteps.map(s => `<li>${s}</li>`).join('');
+        if (mobSteps) mobSteps.innerHTML = g.mobileSteps.map(s => `<li>${s}</li>`).join('');
+
+        gameModal.style.display = 'flex';
+        gameModal.style.pointerEvents = 'auto';
+        gameModal.classList.add('open');
+        syncBodyScrollLock();
+      }
+
+      function closeGameModal() {
+        if (!gameModal) return;
+        gameModal.classList.remove('open');
+        gameModal.style.display = 'none';
+        gameModal.style.pointerEvents = 'none';
+        syncBodyScrollLock();
+      }
+
+      const seoModal = document.getElementById('seoModalBackdrop');
+      function openSeoModal() {
+        if (!seoModal) return;
+        seoModal.style.display = 'flex';
+        seoModal.style.pointerEvents = 'auto';
+        seoModal.classList.add('open');
+        syncBodyScrollLock();
+      }
+
+      function closeSeoModal() {
+        if (!seoModal) return;
+        seoModal.classList.remove('open');
+        seoModal.style.display = 'none';
+        seoModal.style.pointerEvents = 'none';
+        syncBodyScrollLock();
+      }
+
+      // Master Event Delegation on Document (Guaranteed to work on all buttons/tabs)
+      document.addEventListener('click', e => {
+        const target = e.target;
+        if (!target || !(target instanceof Element)) return;
+
+        // Close profile dropdown when clicking outside
+        const profileMenu = document.getElementById('profileMenu');
+        if (profileMenu && profileMenu.classList.contains('open') && !target.closest('#authArea')) {
+          profileMenu.classList.remove('open');
+        }
+
+        // Backdrop clicks
+        if (target === authBackdrop) {
+          closeAuthModal(true);
+          return;
+        }
+        if (target === gameModal) {
+          closeGameModal();
+          return;
+        }
+        if (target === seoModal) {
+          closeSeoModal();
+          return;
+        }
+        if (target === authSuccessOverlay) {
+          dismissAuthSuccessOverlay();
+          return;
+        }
+
+        // Genre filter buttons
+        const genreBtn = target.closest('.filter');
+        if (genreBtn) {
+          document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+          genreBtn.classList.add('active');
+          activeGenre = genreBtn.dataset.filter || 'all';
+          updateCatalog();
+          return;
+        }
+
+        // Platform filter buttons
+        const platBtn = target.closest('.pfilter');
+        if (platBtn) {
+          document.querySelectorAll('.pfilter').forEach(x => x.classList.remove('active'));
+          platBtn.classList.add('active');
+          activePlatform = platBtn.dataset.platform || 'all';
+          updateCatalog();
+          return;
+        }
+
+        // Auth tab switchers
+        const authTabBtn = target.closest('.auth-tab');
+        if (authTabBtn && authTabBtn.dataset.authTab) {
+          switchAuthView(authTabBtn.dataset.authTab);
+          return;
+        }
+
+        // Password eye toggles
+        const eyeBtn = target.closest('[data-toggle-pass]');
+        if (eyeBtn) {
+          const input = document.getElementById(eyeBtn.dataset.togglePass);
+          if (input) {
+            const isP = input.type === 'password';
+            input.type = isP ? 'text' : 'password';
+            eyeBtn.textContent = isP ? '🙈' : '👁';
+          }
+          return;
+        }
+
+        // Action-tagged buttons
+        const actionEl = target.closest('[data-action]');
+        if (!actionEl) return;
+        const action = actionEl.dataset.action;
+
+        switch (action) {
+          case 'enter-hub':
+            finishEntranceAndPromptAuth();
+            break;
+          case 'replay-intro':
+            if (motionMode === 'reduced') {
+              showToast('Switch off Reduced Motion to replay intro');
+            } else {
+              startEntranceCurtain();
+            }
+            break;
+          case 'toggle-font':
+            toggleFontMode();
+            break;
+          case 'cycle-motion':
+            cycleMotionMode();
+            break;
+          case 'open-seo':
+            openSeoModal();
+            break;
+          case 'close-seo':
+            closeSeoModal();
+            break;
+          case 'open-login':
+            if (profileMenu) profileMenu.classList.remove('open');
+            openAuthModal('login');
+            break;
+          case 'close-auth-guest':
+            closeAuthModal(true);
+            break;
+          case 'open-reset':
+            switchAuthView('reset');
+            break;
+          case 'back-to-login':
+            switchAuthView('login');
+            break;
+          case 'demo-login':
+            triggerDemoLogin();
+            break;
+          case 'dismiss-auth-anim':
+            dismissAuthSuccessOverlay();
+            break;
+          case 'toggle-profile-menu': {
+            const menu = document.getElementById('profileMenu');
+            if (menu) {
+              const willOpen = !menu.classList.contains('open');
+              menu.classList.toggle('open', willOpen);
+              actionEl.setAttribute('aria-expanded', String(willOpen));
+            }
+            break;
+          }
+          case 'pm-favs': {
+            if (profileMenu) profileMenu.classList.remove('open');
+            favOnly = true;
+            const favBtn = document.getElementById('favoritesOnly');
+            if (favBtn) {
+              favBtn.classList.add('on');
+              favBtn.textContent = '♥ Showing favourites';
+            }
+            updateCatalog();
+            const gamesSec = document.getElementById('games');
+            if (gamesSec) gamesSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            break;
+          }
+          case 'logout':
+            if (profileMenu) profileMenu.classList.remove('open');
+            signOutUser();
+            break;
+          case 'quick-fill-recovery': {
+            const users = loadUsers();
+            if (resetIdInput) resetIdInput.value = (currentUser || users[0])?.email || 'player@hexlo.gg';
+            break;
+          }
+          case 'send-recovery':
+            sendRecoveryCode();
+            break;
+          case 'copy-otp':
+            if (recoveryState.otp && resetOtpInput) {
+              resetOtpInput.value = recoveryState.otp;
+              showToast(`Code ${recoveryState.otp} filled ✓`);
+            }
+            break;
+          case 'random-game': {
+            const vis = cards.filter(c => c.style.display !== 'none');
+            if (!vis.length) {
+              showToast('No games match your current filter.');
+              return;
+            }
+            const pick = vis[Math.floor(Math.random() * vis.length)];
+            pick.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            const g = GAMES[Number(pick.dataset.index)];
+            if (g) showToast(`Random Spotlight: ${g.name} ✦`);
+            break;
+          }
+          case 'toggle-fav-only': {
+            favOnly = !favOnly;
+            actionEl.classList.toggle('on', favOnly);
+            actionEl.textContent = favOnly ? '♥ Showing favourites' : '♡ Favourites';
+            updateCatalog();
+            break;
+          }
+          case 'toggle-fav': {
+            const card = actionEl.closest('.card');
+            const idx = actionEl.dataset.index !== undefined ? Number(actionEl.dataset.index) : Number(card?.dataset.index);
+            const g = GAMES[idx];
+            if (!g) return;
+            if (favourites.has(g.name)) {
+              favourites.delete(g.name);
+              showToast(`Removed ${g.name} from favourites`);
+            } else {
+              favourites.add(g.name);
+              showToast(`Saved ${g.name} to favourites ♥`);
+            }
+            persistFavourites();
+            syncFavoriteButtons();
+            if (favOnly) updateCatalog();
+            break;
+          }
+          case 'open-game-modal': {
+            const card = actionEl.closest('.card');
+            const idx = actionEl.dataset.index !== undefined ? Number(actionEl.dataset.index) : Number(card?.dataset.index);
+            openGameModal(idx);
+            break;
+          }
+          case 'close-game-modal':
+            closeGameModal();
+            break;
+        }
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          if (authSuccessOverlay && authSuccessOverlay.classList.contains('is-visible')) {
+            dismissAuthSuccessOverlay();
+            return;
+          }
+          if (entryCurtain && !entryCurtain.classList.contains('is-hidden')) {
+            finishEntranceAndPromptAuth();
+            return;
+          }
+          closeGameModal();
+          closeSeoModal();
+          closeAuthModal(true);
+        }
+      });
+
+      // =====================================================================
+      // 7. STARFIELD + NEON CONSTELLATION CANVAS & 3D CARD TILT
+      // =====================================================================
+      const pointerGlow = document.getElementById('pointerGlow');
+      const canvas = document.getElementById('universeCanvas');
+
+      if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
+        window.addEventListener('pointermove', e => {
+          if (pointerGlow && motionMode !== 'reduced') {
+            pointerGlow.style.left = `${e.clientX}px`;
+            pointerGlow.style.top = `${e.clientY}px`;
+          }
+        }, { passive: true });
+
+        cards.forEach(card => {
+          card.addEventListener('mousemove', e => {
+            if (motionMode === 'reduced') return;
+            const r = card.getBoundingClientRect();
+            const rx = (e.clientX - r.left) / Math.max(1, r.width);
+            const ry = (e.clientY - r.top) / Math.max(1, r.height);
+            const maxT = motionMode === 'balanced' ? 2.2 : 4.2;
+            card.style.setProperty('--sheen-x', `${(rx * 100).toFixed(1)}%`);
+            card.style.setProperty('--sheen-y', `${(ry * 100).toFixed(1)}%`);
+            card.style.transform = `perspective(900px) rotateX(${((0.5 - ry) * maxT * 2).toFixed(2)}deg) rotateY(${((rx - 0.5) * maxT * 2).toFixed(2)}deg) translateY(-4px)`;
+          });
+          card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        });
+      }
+
+      if (canvas && canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+        let w = 0, h = 0, stars = [];
+
+        function resizeCanvas() {
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+          w = window.innerWidth;
+          h = window.innerHeight;
+          canvas.width = Math.floor(w * dpr);
+          canvas.height = Math.floor(h * dpr);
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+          const count = motionMode === 'reduced' ? 0 : Math.min(55, Math.max(20, Math.floor((w * h) / 36000)));
+          stars = Array.from({ length: count }, (_, i) => ({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            r: 1 + Math.random() * 2,
+            vx: (Math.random() - 0.5) * 0.35,
+            vy: -0.15 - Math.random() * 0.35,
+            color: i % 3 === 0 ? 'rgba(168,85,247,0.65)' : (i % 3 === 1 ? 'rgba(56,189,248,0.65)' : 'rgba(232,121,249,0.6)')
+          }));
+        }
+
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas, { passive: true });
+
+        function loop() {
+          ctx.clearRect(0, 0, w, h);
+          if (motionMode !== 'reduced') {
+            const mult = motionMode === 'balanced' ? 0.5 : 1;
+            for (let i = 0; i < stars.length; i++) {
+              const s = stars[i];
+              s.x += s.vx * mult;
+              s.y += s.vy * mult;
+              if (s.y < -10) { s.y = h + 10; s.x = Math.random() * w; }
+              if (s.x < -10) s.x = w + 10;
+              if (s.x > w + 10) s.x = -10;
+
+              ctx.beginPath();
+              ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+              ctx.fillStyle = s.color;
+              ctx.fill();
+
+              for (let j = i + 1; j < stars.length; j++) {
+                const s2 = stars[j];
+                const dx = s.x - s2.x;
+                const dy = s.y - s2.y;
+                const dist = Math.hypot(dx, dy);
+                if (dist < 115) {
+                  ctx.beginPath();
+                  ctx.moveTo(s.x, s.y);
+                  ctx.lineTo(s2.x, s2.y);
+                  ctx.strokeStyle = `rgba(168, 85, 247, ${(1 - dist / 115) * 0.16})`;
+                  ctx.lineWidth = 0.8;
+                  ctx.stroke();
+                }
+              }
+            }
+          }
+          requestAnimationFrame(loop);
+        }
+        requestAnimationFrame(loop);
+      }
+    })();
+  </script>
+</body>
+</html>
